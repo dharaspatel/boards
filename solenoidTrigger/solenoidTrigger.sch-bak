@@ -3396,6 +3396,4 @@ Text Label 1700 8650 0    50   ~ 0
 RESET
 Text Label 1700 8750 0    50   ~ 0
 G0(IRQ)
-Text Notes 2300 11000 0    50   ~ 0
-do these 3 pin connectors follow the ctrl pins or go before them?\n
 $EndSCHEMATC
