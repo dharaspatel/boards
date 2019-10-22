@@ -247,16 +247,40 @@ X P6 6 250 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Rocketry_R_100
+# Rocketry_NMOS_CDS16
 #
-DEF Rocketry_R_100 R 0 0 N Y 1 F N
+DEF Rocketry_NMOS_CDS16 Q 0 40 Y Y 1 F N
+F0 "Q" 0 -150 50 H V C CNN
+F1 "Rocketry_NMOS_CDS16" 0 150 50 H V C CNN
+F2 "rocketry:CSD16322Q5" -800 200 50 H I C CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" 100 350 50 H I C CNN
+F4 "CSD16322Q5" 200 500 50 H I C CNN "MPN"
+F5 "296-25112-1-ND" -450 500 50 H I C CNN "DPN"
+F6 "https://www.digikey.com/product-detail/en/texas-instruments/CSD16322Q5/296-25112-1-ND/2138515" 400 650 50 H I C CNN "PurchasingLink"
+DRAW
+S -200 100 200 -400 0 1 0 f
+S 200 -400 200 -400 0 1 0 N
+X S 1 -400 0 200 R 50 50 1 1 I
+X S 2 -400 -100 200 R 50 50 1 1 I
+X S 3 -400 -200 200 R 50 50 1 1 I
+X G 4 -400 -300 200 R 50 50 1 1 I
+X D 5 400 -300 200 L 50 50 1 1 I
+X D 6 400 -200 200 L 50 50 1 1 I
+X D 7 400 -100 200 L 50 50 1 1 I
+X D 8 400 0 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Rocketry_R_1K
+#
+DEF Rocketry_R_1K R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Rocketry_R_100" -100 0 50 V V C CNN
-F2 "footprints:R_0805_OEM" -800 150 50 H I C CNN
-F3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" -300 500 50 H I C CNN
+F1 "Rocketry_R_1K" -100 0 50 V V C CNN
+F2 "footprints:R_0805_OEM" -70 0 50 H I C CNN
+F3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" 80 0 50 H I C CNN
 F4 "DK" 0 0 60 H I C CNN "MFN"
-F5 "RNCP0805FTD100RCT-ND" -650 250 60 H I C CNN "MPN"
-F6 "https://www.digikey.com/products/en?keywords=RNCP0805FTD100RCT-ND" 480 400 60 H I C CNN "PurchasingLink"
+F5 "RNCP0805FTD1K00CT-ND" 0 0 60 H I C CNN "MPN"
+F6 "https://www.digikey.com/products/en?keywords=RNCP0805FTD1K00CT-ND" 480 400 60 H I C CNN "PurchasingLink"
 $FPLIST
  R_*
  Resistor_*
@@ -282,42 +306,6 @@ DRAW
 S 150 -100 -150 100 0 1 0 f
 X 1 1 250 50 100 L 50 50 1 1 B
 X 2 2 250 -50 100 L 50 50 1 1 B
-ENDDRAW
-ENDDEF
-#
-# Transistor_FET_2N7000
-#
-DEF Transistor_FET_2N7000 Q 0 0 Y N 1 F N
-F0 "Q" 200 75 50 H V L CNN
-F1 "Transistor_FET_2N7000" 200 0 50 H V L CNN
-F2 "Package_TO_SOT_THT:TO-92_Inline" 200 -75 50 H I L CIN
-F3 "" 0 0 50 H I L CNN
-ALIAS TP0610L VP0610L
-$FPLIST
- TO?92*
-$ENDFPLIST
-DRAW
-C 65 0 111 0 1 10 N
-C 100 -70 11 0 1 0 F
-C 100 70 11 0 1 0 F
-P 2 0 1 0 -100 0 10 0 N
-P 2 0 1 0 30 -70 100 -70 N
-P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 0 30 0 100 0 N
-P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 0 30 70 100 70 N
-P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 -70 100 -100 N
-P 2 0 1 0 100 -70 100 0 N
-P 2 0 1 0 100 100 100 70 N
-P 3 0 1 10 10 75 10 -75 10 -75 N
-P 4 0 1 0 40 0 80 15 80 -15 40 0 F
-P 4 0 1 0 100 -70 130 -70 130 70 100 70 N
-P 4 0 1 0 110 20 115 15 145 15 150 10 N
-P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
-X S 1 100 -200 100 U 50 50 1 1 P
-X G 2 -200 0 100 R 50 50 1 1 I
-X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
