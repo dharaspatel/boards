@@ -2856,21 +2856,6 @@ Text Notes 950  8050 0    50   ~ 0
 radio
 Text Label 1700 8350 0    50   ~ 0
 MISO
-Wire Wire Line
-	1700 8050 1950 8050
-Wire Wire Line
-	1950 8050 1950 8100
-$Comp
-L power:GND #PWR?
-U 1 1 5DE0B4B9
-P 1950 8100
-F 0 "#PWR?" H 1950 7850 50  0001 C CNN
-F 1 "GND" H 1955 7927 50  0000 C CNN
-F 2 "" H 1950 8100 50  0001 C CNN
-F 3 "" H 1950 8100 50  0001 C CNN
-	1    1950 8100
-	1    0    0    -1  
-$EndComp
 Text Label 1700 8150 0    50   ~ 0
 5V
 Text Label 1700 8450 0    50   ~ 0
@@ -2997,21 +2982,6 @@ Text Label 1700 8750 0    50   ~ 0
 G0(IRQ)
 Text Label 1650 10200 0    50   ~ 0
 MISO
-Wire Wire Line
-	1650 9900 1900 9900
-Wire Wire Line
-	1900 9900 1900 9950
-$Comp
-L power:GND #PWR?
-U 1 1 5DAF6BDD
-P 1900 9950
-F 0 "#PWR?" H 1900 9700 50  0001 C CNN
-F 1 "GND" H 1905 9777 50  0000 C CNN
-F 2 "" H 1900 9950 50  0001 C CNN
-F 3 "" H 1900 9950 50  0001 C CNN
-	1    1900 9950
-	1    0    0    -1  
-$EndComp
 Text Label 1650 10000 0    50   ~ 0
 12V
 Text Label 1650 10300 0    50   ~ 0
@@ -3242,14 +3212,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 	1    8900 8400
 	-1   0    0    -1  
 $EndComp
-Text Label 8300 8100 2    50   ~ 0
-RadioConnOut
-Text Label 8300 8200 2    50   ~ 0
-12V
-Text Label 8300 8300 2    50   ~ 0
-AtmegaToRelay
-Text Label 8300 8900 2    50   ~ 0
-sol_1
 $Comp
 L solenoidTrigger-rescue:Crystal_SMD-formula Y?
 U 1 1 5DA713E3
@@ -3475,4 +3437,34 @@ Text Notes 5000 8950 0    50   ~ 0
 transistor
 Text Notes 5050 10200 0    50   ~ 0
 transistor
+Wire Wire Line
+	1700 8050 2000 8050
+$Comp
+L power:GND #PWR?
+U 1 1 5DBB9B5B
+P 2000 8050
+F 0 "#PWR?" H 2000 7800 50  0001 C CNN
+F 1 "GND" H 2005 7877 50  0000 C CNN
+F 2 "" H 2000 8050 50  0001 C CNN
+F 3 "" H 2000 8050 50  0001 C CNN
+	1    2000 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 9900 1950 9900
+$Comp
+L power:GND #PWR?
+U 1 1 5DBC43FE
+P 1950 9900
+F 0 "#PWR?" H 1950 9650 50  0001 C CNN
+F 1 "GND" H 1955 9727 50  0000 C CNN
+F 2 "" H 1950 9900 50  0001 C CNN
+F 3 "" H 1950 9900 50  0001 C CNN
+	1    1950 9900
+	1    0    0    -1  
+$EndComp
+Text Notes 9950 6850 0    98   ~ 0
+To do:\n   - Should the solenoid connector ports be the same as the radio \n      connector ones like I did? \n      This is just a placeholder right?\n   - Update ports on Atmega due to net label changes (fuse, \n      transistors, radio, programming?)
+Text Notes 9950 9300 0    98   ~ 0
+Additional Questions:\n   - Should I be using both SCK and SCL on the Atmega? Which one \n     should the connectors connect to?\n   - Should the Interrupt (IRQ, from radio/solenoid connectors) \n     connect to the Atmega? If so, on which port?\n   - Should the Chip Select (CS, from radio/solenoid connectors) \n     connect to the Atmega? If so, on which port?\n   - Do I need an SDA on the Atmega like the example board has?\n   - Do the net labels work as intended, or do they not connect in the \n     correct order right now with how I have it set up?\n   - Is there only one reset crystal on the entire PCB (on the Atmega)\n     that all resets of the connectors connect to or should I add a reset \n     crystal for each connector that has a reset port?\n   - Are all connectors connected to Atmega along one MISO/MOSI/5V/\n     SCLK line, or shold I have separate lines for each connector?\n   - No AREF right? (example Atmega above doesn't have one)
 $EndSCHEMATC
