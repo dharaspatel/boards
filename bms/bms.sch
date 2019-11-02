@@ -53,24 +53,24 @@ $EndComp
 $Comp
 L Power_Management:LM5060 U?
 U 1 1 5D97B396
-P 6350 1650
-F 0 "U?" H 6350 1064 50  0000 C CNN
-F 1 "LM5060" H 6350 973 50  0000 C CNN
-F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 6550 1050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm5060.pdf" H 6350 2100 50  0001 C CNN
-	1    6350 1650
+P 4800 4850
+F 0 "U?" H 4800 4264 50  0000 C CNN
+F 1 "LM5060" H 4800 4173 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 5000 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm5060.pdf" H 4800 5300 50  0001 C CNN
+	1    4800 4850
 	1    0    0    -1  
 $EndComp
-Text Notes 5550 1000 0    50   ~ 0
+Text Notes 4000 4200 0    50   ~ 0
 REVERSE PROTECTION
 Wire Notes Line
-	5450 850  5450 2450
+	3900 4050 3900 5650
 Wire Notes Line
-	5450 2450 7100 2450
+	3900 5650 5550 5650
 Wire Notes Line
-	7100 2450 7100 850 
+	5550 5650 5550 4050
 Wire Notes Line
-	5450 850  7100 850 
+	3900 4050 5550 4050
 Wire Wire Line
 	2100 1000 2600 1000
 Wire Wire Line
@@ -167,43 +167,32 @@ GND
 $Comp
 L Device:Thermistor_NTC_US TH?
 U 1 1 5DAE42F9
-P 3000 1950
-F 0 "TH?" H 2700 1900 50  0000 L CNN
-F 1 "Thermistor_NTC_US" H 2100 2000 50  0000 L CNN
-F 2 "" H 3000 2000 50  0001 C CNN
-F 3 "~" H 3000 2000 50  0001 C CNN
-	1    3000 1950
+P 3000 1850
+F 0 "TH?" H 2700 1800 50  0000 L CNN
+F 1 "Thermistor_NTC_US" H 2100 1900 50  0000 L CNN
+F 2 "" H 3000 1900 50  0001 C CNN
+F 3 "~" H 3000 1900 50  0001 C CNN
+	1    3000 1850
 	1    0    0    -1  
 $EndComp
-Text Label 10550 2150 0    50   ~ 0
-TH
 $Comp
 L Device:R R?
 U 1 1 5DAE50A0
-P 3000 1550
-F 0 "R?" H 3070 1596 50  0000 L CNN
-F 1 "R" H 3070 1505 50  0000 L CNN
-F 2 "" V 2930 1550 50  0001 C CNN
-F 3 "~" H 3000 1550 50  0001 C CNN
-	1    3000 1550
+P 3000 3000
+F 0 "R?" H 3070 3046 50  0000 L CNN
+F 1 "R" H 3070 2955 50  0000 L CNN
+F 2 "" V 2930 3000 50  0001 C CNN
+F 3 "~" H 3000 3000 50  0001 C CNN
+	1    3000 3000
 	1    0    0    -1  
 $EndComp
-Text Label 3000 1750 0    50   ~ 0
+Text Label 3000 2550 0    50   ~ 0
 TH1
-Wire Wire Line
-	3000 1800 3000 1700
 Wire Wire Line
 	3000 1400 3500 1400
 Connection ~ 3500 1400
 Wire Wire Line
 	3500 1400 3500 1550
-Wire Wire Line
-	2000 3150 3000 3150
-Wire Wire Line
-	3000 2100 3000 3150
-Connection ~ 3000 3150
-Wire Wire Line
-	3000 3150 3200 3150
 $Comp
 L Device:Thermistor_NTC_US TH?
 U 1 1 5DAE5AEA
@@ -215,21 +204,8 @@ F 3 "~" H 3200 2150 50  0001 C CNN
 	1    3200 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5DAE5AF1
-P 3200 1700
-F 0 "R?" H 3270 1746 50  0000 L CNN
-F 1 "R" H 3270 1655 50  0000 L CNN
-F 2 "" V 3130 1700 50  0001 C CNN
-F 3 "~" H 3200 1700 50  0001 C CNN
-	1    3200 1700
-	1    0    0    -1  
-$EndComp
-Text Label 3200 1900 0    50   ~ 0
+Text Label 3200 2650 0    50   ~ 0
 TH2
-Wire Wire Line
-	3200 1950 3200 1850
 $Comp
 L Device:Thermistor_NTC_US TH?
 U 1 1 5DAE5C5A
@@ -241,21 +217,8 @@ F 3 "~" H 3400 2400 50  0001 C CNN
 	1    3400 2350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5DAE5C61
-P 3400 1950
-F 0 "R?" H 3470 1996 50  0000 L CNN
-F 1 "R" H 3470 1905 50  0000 L CNN
-F 2 "" V 3330 1950 50  0001 C CNN
-F 3 "~" H 3400 1950 50  0001 C CNN
-	1    3400 1950
-	1    0    0    -1  
-$EndComp
-Text Label 3400 2150 0    50   ~ 0
+Text Label 3400 2750 0    50   ~ 0
 TH3
-Wire Wire Line
-	3400 2200 3400 2100
 Wire Wire Line
 	3200 1550 3500 1550
 Connection ~ 3500 1550
@@ -269,16 +232,168 @@ Wire Wire Line
 Connection ~ 3500 1800
 Wire Wire Line
 	3500 1800 3500 3150
+Text Label 10550 2250 0    50   ~ 0
+SD
+Connection ~ 5000 1000
 Wire Wire Line
-	3200 2250 3200 3150
+	5000 1000 5650 1000
+Wire Wire Line
+	5650 1000 5650 1250
+Connection ~ 5650 1000
+Wire Wire Line
+	5650 1000 7250 1000
+Text Label 5650 1250 2    50   ~ 0
+Ibat
+Wire Wire Line
+	2000 3150 3000 3150
+Connection ~ 3000 3150
+$Comp
+L Device:R R?
+U 1 1 5DAE5C61
+P 3400 3000
+F 0 "R?" H 3470 3046 50  0000 L CNN
+F 1 "R" H 3470 2955 50  0000 L CNN
+F 2 "" V 3330 3000 50  0001 C CNN
+F 3 "~" H 3400 3000 50  0001 C CNN
+	1    3400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DAE5AF1
+P 3200 3000
+F 0 "R?" H 3270 3046 50  0000 L CNN
+F 1 "R" H 3270 2955 50  0000 L CNN
+F 2 "" V 3130 3000 50  0001 C CNN
+F 3 "~" H 3200 3000 50  0001 C CNN
+	1    3200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3150 3200 3150
+Connection ~ 3400 3150
+Wire Wire Line
+	3400 3150 3500 3150
 Connection ~ 3200 3150
 Wire Wire Line
 	3200 3150 3400 3150
 Wire Wire Line
-	3400 2500 3400 3150
-Connection ~ 3400 3150
+	3000 1400 3000 1700
 Wire Wire Line
-	3400 3150 3500 3150
-Text Label 10550 2250 0    50   ~ 0
-SD
+	3200 1550 3200 1950
+Wire Wire Line
+	3400 1800 3400 2200
+Wire Wire Line
+	3200 2250 3200 2850
+Wire Wire Line
+	3400 2500 3400 2850
+Wire Wire Line
+	3000 2000 3000 2850
+$Comp
+L Device:R R?
+U 1 1 5DB7AE6F
+P 7400 1000
+F 0 "R?" V 7193 1000 50  0000 C CNN
+F 1 "R" V 7284 1000 50  0000 C CNN
+F 2 "" V 7330 1000 50  0001 C CNN
+F 3 "~" H 7400 1000 50  0001 C CNN
+	1    7400 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 5650 3700 5650
+Wire Wire Line
+	3700 5650 3700 5900
+Wire Wire Line
+	3200 5650 3050 5650
+Wire Wire Line
+	3050 5650 3050 5900
+Wire Wire Line
+	2750 5900 3050 5900
+Connection ~ 3050 5900
+Wire Wire Line
+	3050 5900 3700 5900
+Connection ~ 3700 5900
+Wire Wire Line
+	3700 5900 4000 5900
+$Comp
+L Device:CP C?
+U 1 1 5DBDC541
+P 3350 5650
+F 0 "C?" V 3605 5650 50  0000 C CNN
+F 1 "CP" V 3514 5650 50  0000 C CNN
+F 2 "" H 3388 5500 50  0001 C CNN
+F 3 "~" H 3350 5650 50  0001 C CNN
+	1    3350 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 5550 2250 5600
+Wire Wire Line
+	2250 5600 2000 5600
+Wire Wire Line
+	2250 5250 2250 5100
+Wire Wire Line
+	2250 5100 2000 5100
+$Comp
+L Device:CP C?
+U 1 1 5DBDCD8D
+P 2250 5400
+F 0 "C?" H 2132 5354 50  0000 R CNN
+F 1 "CP" H 2132 5445 50  0000 R CNN
+F 2 "" H 2288 5250 50  0001 C CNN
+F 3 "~" H 2250 5400 50  0001 C CNN
+	1    2250 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 5350 2000 5350
+Text Label 1450 5100 2    50   ~ 0
+BT1
+Wire Wire Line
+	2000 5250 2000 5350
+Connection ~ 2000 5350
+Wire Wire Line
+	2000 5350 2000 5450
+Text Label 1450 5650 2    50   ~ 0
+BT2
+Wire Wire Line
+	1450 5900 2000 5900
+Connection ~ 1450 5350
+Wire Wire Line
+	2000 5700 2000 5900
+Text Label 1450 6200 2    50   ~ 0
+BT3
+Connection ~ 1450 5900
+Wire Wire Line
+	1450 4850 1450 5350
+Wire Wire Line
+	1450 5900 950  5900
+Wire Wire Line
+	1450 5350 950  5350
+Wire Wire Line
+	1450 6450 950  6450
+Wire Wire Line
+	950  6450 950  6350
+Wire Wire Line
+	950  6100 950  5900
+Connection ~ 950  5900
+Wire Wire Line
+	950  5900 950  5750
+Connection ~ 950  5350
+Wire Wire Line
+	950  4850 1450 4850
+Wire Wire Line
+	1450 5900 1450 6450
+Wire Wire Line
+	950  5350 950  4850
+Wire Wire Line
+	1450 5350 1450 5900
+Wire Wire Line
+	950  5350 950  5600
+Connection ~ 1450 4850
+Wire Wire Line
+	1450 4850 2000 4850
+Wire Wire Line
+	2000 4850 2000 4950
 $EndSCHEMATC
