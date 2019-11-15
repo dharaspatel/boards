@@ -2782,17 +2782,6 @@ F 6 "http://www.te.com/usa-en/product-1-338070-0.html#guest-click" H 1400 10500 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Fuse F?
-U 1 1 5DA01504
-P 2300 7150
-F 0 "F?" V 2103 7150 50  0000 C CNN
-F 1 "Fuse" V 2194 7150 50  0000 C CNN
-F 2 "" V 2230 7150 50  0001 C CNN
-F 3 "~" H 2300 7150 50  0001 C CNN
-	1    2300 7150
-	0    1    1    0   
-$EndComp
-$Comp
 L power:VCC #PWR?
 U 1 1 5DDA38EC
 P 7900 6850
@@ -2803,37 +2792,6 @@ F 3 "" H 7900 6850 50  0001 C CNN
 	1    7900 6850
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Rocketry:UF_2_RA J?
-U 1 1 5DDAA094
-P 1450 7200
-F 0 "J?" H 1508 7497 60  0000 C CNN
-F 1 "UF_2_RA" H 1508 7391 60  0000 C CNN
-F 2 "footprints:Ultrafit_2_RA" H 1350 7250 60  0001 C CNN
-F 3 "https://www.molex.com/pdm_docs/sd/1723101302_sd.pdf" H 1450 7350 60  0001 C CNN
-F 4 "DK" H 1650 7550 60  0001 C CNN "MFN"
-F 5 "WM11825-ND " H 1750 7650 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/molex-llc/1723101302/WM11825-ND/5360290" H 1550 7450 60  0001 C CNN "PurchasingLink"
-	1    1450 7200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 7250 1800 7250
-Wire Wire Line
-	1800 7250 1800 7350
-$Comp
-L power:GND #PWR?
-U 1 1 5DDB3B00
-P 1800 7350
-F 0 "#PWR?" H 1800 7100 50  0001 C CNN
-F 1 "GND" H 1805 7177 50  0000 C CNN
-F 2 "" H 1800 7350 50  0001 C CNN
-F 3 "" H 1800 7350 50  0001 C CNN
-	1    1800 7350
-	1    0    0    -1  
-$EndComp
-Text Notes 950  7200 0    50   ~ 0
-battery
 Text Notes 800  8100 0    50   ~ 0
 radio
 Text Label 1550 8400 0    50   ~ 0
@@ -2856,8 +2814,6 @@ F 6 "https://www.digikey.com/product-detail/en/amphenol-fci/67997-206HLF/609-323
 	1    2650 8650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 7150 2150 7150
 Wire Wire Line
 	7900 6850 8050 6850
 Text Label 8050 6850 0    50   ~ 0
@@ -3435,20 +3391,20 @@ Wire Wire Line
 Connection ~ 9200 8600
 Wire Wire Line
 	9500 8600 9200 8600
-Text Label 3000 6950 2    50   ~ 0
+Text Label 2000 7500 2    50   ~ 0
 12V
 $Comp
 L power:GND #PWR?
 U 1 1 5DEE7B7E
-P 3850 7250
-F 0 "#PWR?" H 3850 7000 50  0001 C CNN
-F 1 "GND" H 3855 7077 50  0000 C CNN
-F 2 "" H 3850 7250 50  0001 C CNN
-F 3 "" H 3850 7250 50  0001 C CNN
-	1    3850 7250
+P 2850 7800
+F 0 "#PWR?" H 2850 7550 50  0001 C CNN
+F 1 "GND" H 2855 7627 50  0000 C CNN
+F 2 "" H 2850 7800 50  0001 C CNN
+F 3 "" H 2850 7800 50  0001 C CNN
+	1    2850 7800
 	1    0    0    -1  
 $EndComp
-Text Label 4150 6950 0    50   ~ 0
+Text Label 3150 7500 0    50   ~ 0
 5V
 Text Notes 1150 6450 0    118  ~ 0
 CONNECTORS
@@ -3661,8 +3617,6 @@ F 6 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/E
 	1    12000 9550
 	0    -1   -1   0   
 $EndComp
-Text Label 2450 7150 0    50   ~ 0
-12V
 Text Label 11850 9550 2    50   ~ 0
 12V
 Text Label 11850 8950 2    50   ~ 0
@@ -3682,35 +3636,35 @@ PLED3
 $Comp
 L Regulator_Linear:AMS1117-5.0 U?
 U 1 1 5DDA38F2
-P 3850 6950
-F 0 "U?" H 3850 7192 50  0000 C CNN
-F 1 "L78M05CDT-TR " H 3850 7101 50  0000 C CNN
-F 2 "footprints:L78M05CDT-TR" H 3850 7150 50  0001 C CNN
-F 3 "www.st.com/content/ccc/resource/technical/document/datasheet/d7/5f/dc/5c/d5/b6/48/7c/CD00000447.pdf/files/CD00000447.pdf/jcr:content/translations/en.CD00000447.pdf" H 3950 6700 50  0001 C CNN
-	1    3850 6950
+P 2850 7500
+F 0 "U?" H 2850 7742 50  0000 C CNN
+F 1 "L78M05CDT-TR " H 2850 7651 50  0000 C CNN
+F 2 "footprints:L78M05CDT-TR" H 2850 7700 50  0001 C CNN
+F 3 "www.st.com/content/ccc/resource/technical/document/datasheet/d7/5f/dc/5c/d5/b6/48/7c/CD00000447.pdf/files/CD00000447.pdf/jcr:content/translations/en.CD00000447.pdf" H 2950 7250 50  0001 C CNN
+	1    2850 7500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Rocketry:C_0.33uF C?
 U 1 1 5DEDBC87
-P 3300 7200
-F 0 "C?" H 3185 7154 50  0000 R CNN
-F 1 "C_0.33uF" H 3185 7245 50  0000 R CNN
-F 2 "footprints:C_0805_OEM" H 3338 7050 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 3325 7300 50  0001 C CNN
-F 4 "DK" H 3300 7200 60  0001 C CNN "MFN"
-F 5 "478-5273-1-ND" H 3300 7200 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/products/en/capacitors/ceramic-capacitors/60?k=cap&k=&pkeyword=cap&pv7=2&pv7=274&pv7=250&pv7=17&pv7=6&pv1989=0&pv2049=u0.33%C2%B5F&pv3=2&pv14=9&pv16=6&sf=1&FV=ffe0003c&quantity=&ColumnSort=0&page=1&stock=1&datasheet=1&pageSize=25" H 3725 7700 60  0001 C CNN "PurchasingLink"
-	1    3300 7200
+P 2300 7750
+F 0 "C?" H 2185 7704 50  0000 R CNN
+F 1 "C_0.33uF" H 2185 7795 50  0000 R CNN
+F 2 "footprints:C_0805_OEM" H 2338 7600 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 2325 7850 50  0001 C CNN
+F 4 "DK" H 2300 7750 60  0001 C CNN "MFN"
+F 5 "478-5273-1-ND" H 2300 7750 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/products/en/capacitors/ceramic-capacitors/60?k=cap&k=&pkeyword=cap&pv7=2&pv7=274&pv7=250&pv7=17&pv7=6&pv1989=0&pv2049=u0.33%C2%B5F&pv3=2&pv14=9&pv16=6&sf=1&FV=ffe0003c&quantity=&ColumnSort=0&page=1&stock=1&datasheet=1&pageSize=25" H 2725 8250 60  0001 C CNN "PurchasingLink"
+	1    2300 7750
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3000 6950 3300 6950
+	2000 7500 2300 7500
 Wire Wire Line
-	3300 6950 3300 7050
-Connection ~ 3300 6950
+	2300 7500 2300 7600
+Connection ~ 2300 7500
 Wire Wire Line
-	3300 6950 3550 6950
+	2300 7500 2550 7500
 Text Label 3850 8050 2    50   ~ 0
 ctrl_pin_1-1
 $Comp
@@ -3965,4 +3919,50 @@ Text Label 1850 9750 0    50   ~ 0
 12V_Solenoid2
 Text Label 2750 9750 0    50   ~ 0
 12V_Solenoid3
+Text Label 2200 7150 0    50   ~ 0
+12V
+Wire Wire Line
+	1450 7150 1900 7150
+Text Notes 700  7200 0    50   ~ 0
+battery
+$Comp
+L power:GND #PWR?
+U 1 1 5DDB3B00
+P 1550 7350
+F 0 "#PWR?" H 1550 7100 50  0001 C CNN
+F 1 "GND" H 1555 7177 50  0000 C CNN
+F 2 "" H 1550 7350 50  0001 C CNN
+F 3 "" H 1550 7350 50  0001 C CNN
+	1    1550 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 7250 1550 7350
+Wire Wire Line
+	1450 7250 1550 7250
+$Comp
+L Rocketry:UF_2_RA J?
+U 1 1 5DDAA094
+P 1200 7200
+F 0 "J?" H 1258 7497 60  0000 C CNN
+F 1 "UF_2_RA" H 1258 7391 60  0000 C CNN
+F 2 "footprints:Ultrafit_2_RA" H 1100 7250 60  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/1723101302_sd.pdf" H 1200 7350 60  0001 C CNN
+F 4 "DK" H 1400 7550 60  0001 C CNN "MFN"
+F 5 "WM11825-ND " H 1500 7650 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/molex-llc/1723101302/WM11825-ND/5360290" H 1300 7450 60  0001 C CNN "PurchasingLink"
+	1    1200 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5DA01504
+P 2050 7150
+F 0 "F?" V 1853 7150 50  0000 C CNN
+F 1 "Fuse" V 1944 7150 50  0000 C CNN
+F 2 "" V 1980 7150 50  0001 C CNN
+F 3 "~" H 2050 7150 50  0001 C CNN
+	1    2050 7150
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
