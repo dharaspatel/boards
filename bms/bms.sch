@@ -15,20 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L formula:ATMEGA16M1 U?
-U 1 1 5D97ADEC
-P 9450 2850
-F 0 "U?" H 9450 4817 50  0000 C CNN
-F 1 "ATMEGA16M1" H 9450 4726 50  0000 C CNN
-F 2 "footprints:TQFP-32_7x7mm_Pitch0.8mm" H 9450 2850 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8209-8-bit%20AVR%20ATmega16M1-32M1-64M1_Datasheet.pdf" H 8500 4680 50  0001 C CNN
-F 4 "DK" H 9450 2850 60  0001 C CNN "MFN"
-F 5 "ATMEGA16M1-AU-ND" H 9450 2850 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/atmel/ATMEGA16M1-AU/ATMEGA16M1-AU-ND/2271208" H 8900 5080 60  0001 C CNN "PurchasingLink"
-	1    9450 2850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Female J?
 U 1 1 5DA0DF98
 P 1150 3450
@@ -110,8 +96,6 @@ Text Label 5700 1550 2    50   ~ 0
 BT5
 Text Label 5700 1800 2    50   ~ 0
 BT6
-Text Label 3250 3150 2    50   ~ 0
-GND
 $Comp
 L Device:Thermistor_NTC_US TH?
 U 1 1 5DAE42F9
@@ -584,9 +568,6 @@ F 3 "~" H 2250 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1800 1000 1800 1300
-Connection ~ 1800 1000
-Wire Wire Line
-	1800 1000 2600 1000
 Connection ~ 1800 1300
 $Comp
 L Transistor_BJT:2N3904 Q1
@@ -607,13 +588,7 @@ Wire Wire Line
 	2250 1300 2250 1350
 Wire Wire Line
 	1300 1550 1950 1550
-Wire Wire Line
-	3650 1000 3250 1000
-Text Label 3250 1000 2    50   ~ 0
-12V
 Connection ~ 4050 3150
-Wire Wire Line
-	3250 3150 4050 3150
 Wire Wire Line
 	5350 1000 5700 1000
 Wire Wire Line
@@ -629,4 +604,123 @@ F 3 "~" H 3800 1000 50  0001 C CNN
 	1    3800 1000
 	-1   0    0    1   
 $EndComp
+$Comp
+L MCU_Microchip_SAML:ATSAML21J18B-AUT U?
+U 1 1 5DCF31A5
+P 9300 2650
+F 0 "U?" H 9300 664 50  0000 C CNN
+F 1 "ATSAML21J18B-AUT" H 9300 573 50  0000 C CNN
+F 2 "Package_QFP:TQFP-64_10x10mm_P0.5mm" H 10500 4450 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001477A.pdf" H 9300 2650 50  0001 C CNN
+	1    9300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DCF5403
+P 2250 2200
+F 0 "R?" H 2320 2246 50  0001 L CNN
+F 1 "R" H 2320 2155 50  0000 L CNN
+F 2 "" V 2180 2200 50  0001 C CNN
+F 3 "~" H 2250 2200 50  0001 C CNN
+	1    2250 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 2050
+$Comp
+L Device:Q_NJFET_DGS Q?
+U 1 1 5DCF7689
+P 2150 2800
+F 0 "Q?" H 2341 2800 50  0000 L CNN
+F 1 "Q_NJFET_DGS" H 2341 2755 50  0001 L CNN
+F 2 "" H 2350 2900 50  0001 C CNN
+F 3 "~" H 2150 2800 50  0001 C CNN
+	1    2150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2600 2250 2350
+Connection ~ 2250 2350
+Wire Wire Line
+	2250 3000 2250 3150
+Wire Wire Line
+	2250 3150 1800 3150
+Connection ~ 1800 3150
+Connection ~ 2250 3150
+$Comp
+L Device:Q_PJFET_DGS Q?
+U 1 1 5DD0060A
+P 2250 1100
+F 0 "Q?" V 2486 1100 50  0000 C CNN
+F 1 "Q_PJFET_DGS" V 2577 1100 50  0001 C CNN
+F 2 "" H 2450 1200 50  0001 C CNN
+F 3 "~" H 2250 1100 50  0001 C CNN
+	1    2250 1100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2250 1300
+Wire Wire Line
+	1800 1000 2050 1000
+Connection ~ 1800 1000
+$Comp
+L Device:D_Schottky D?
+U 1 1 5DD0C2EB
+P 2750 1000
+F 0 "D?" V 2750 1079 50  0001 L CNN
+F 1 "D_Schottky" V 2795 1079 50  0001 L CNN
+F 2 "" H 2750 1000 50  0001 C CNN
+F 3 "~" H 2750 1000 50  0001 C CNN
+	1    2750 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 1000 2600 1000
+$Comp
+L Device:C_Small C?
+U 1 1 5DD0EAEB
+P 2750 1950
+F 0 "C?" H 2842 1950 50  0000 L CNN
+F 1 "C_Small" H 2842 1905 50  0001 L CNN
+F 2 "" H 2750 1950 50  0001 C CNN
+F 3 "~" H 2750 1950 50  0001 C CNN
+	1    2750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2050 2750 2050
+Wire Wire Line
+	2750 2050 3050 2050
+Connection ~ 2750 2050
+Wire Wire Line
+	2250 2350 3050 2350
+Wire Wire Line
+	2900 1000 3050 1000
+Wire Wire Line
+	3050 1000 3050 1300
+Connection ~ 3050 1000
+Wire Wire Line
+	3050 1000 3500 1000
+Wire Wire Line
+	2250 3150 3500 3150
+Wire Wire Line
+	3500 1000 3500 2750
+Connection ~ 3500 1000
+Wire Wire Line
+	3500 1000 3650 1000
+$Comp
+L Device:CP_Small C?
+U 1 1 5DD2011C
+P 3500 2850
+F 0 "C?" H 3588 2850 50  0000 L CNN
+F 1 "CP_Small" H 3588 2805 50  0001 L CNN
+F 2 "" H 3500 2850 50  0001 C CNN
+F 3 "~" H 3500 2850 50  0001 C CNN
+	1    3500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2950 3500 3150
+Connection ~ 3500 3150
+Wire Wire Line
+	3500 3150 4050 3150
 $EndSCHEMATC
