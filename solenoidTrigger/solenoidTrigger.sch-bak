@@ -434,7 +434,7 @@ U 1 1 5DC05DE9
 P 5000 10200
 F 0 "Q3" H 5000 10465 50  0000 C CNN
 F 1 "NMOS_CDS16" H 5000 10374 50  0000 C CNN
-F 2 "rocketry:CSD16322Q5" H 4200 10400 50  0001 C CNN
+F 2 "footprints:CSD16322Q5" H 4200 10400 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 5100 10550 50  0001 C CNN
 F 4 "CSD16322Q5" H 5200 10700 50  0001 C CNN "MPN"
 F 5 "296-25112-1-ND" H 4550 10700 50  0001 C CNN "DPN"
@@ -501,7 +501,7 @@ F 3 "" H 1850 8100 50  0001 C CNN
 	1    1850 8100
 	1    0    0    -1  
 $EndComp
-Text Notes 8000 4300 0    98   ~ 0
+Text Notes 10350 1150 0    98   ~ 0
 Check:\n   - Do the net labels work as intended, or do they not connect in the \n     correct order right now with how I have it set up?\n 
 $Comp
 L Rocketry:CONN_01X03 J3
@@ -560,7 +560,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 $EndComp
 Text Label 9500 7300 2    59   ~ 0
 CS
-Text Notes 7950 5250 0    118  ~ 0
+Text Notes 10300 2100 0    118  ~ 0
 To do:\n   - PROGRAMMING LEDS - Done, check resistor values\n   - POWER LEDS (1 for 12V, 1 for 5V) - need to do, \n     see pic on phone, 2 transistors & 2 control pins \n     for each solenoid, of which there are 3\n   - solenoid connectors follow transistors\n
 Wire Wire Line
 	8950 8600 8950 8700
@@ -583,7 +583,7 @@ U 1 1 5DF7F358
 P 5000 7150
 F 0 "Q1" H 5000 7415 50  0000 C CNN
 F 1 "NMOS_CDS16" H 5000 7324 50  0000 C CNN
-F 2 "rocketry:CSD16322Q5" H 4200 7350 50  0001 C CNN
+F 2 "footprints:CSD16322Q5" H 4200 7350 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 5100 7500 50  0001 C CNN
 F 4 "CSD16322Q5" H 5200 7650 50  0001 C CNN "MPN"
 F 5 "296-25112-1-ND" H 4550 7650 50  0001 C CNN "DPN"
@@ -643,7 +643,7 @@ U 1 1 5DFB08D1
 P 7000 10250
 F 0 "Q6" H 7000 10515 50  0000 C CNN
 F 1 "NMOS_CDS16" H 7000 10424 50  0000 C CNN
-F 2 "rocketry:CSD16322Q5" H 6200 10450 50  0001 C CNN
+F 2 "footprints:CSD16322Q5" H 6200 10450 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 7100 10600 50  0001 C CNN
 F 4 "CSD16322Q5" H 7200 10750 50  0001 C CNN "MPN"
 F 5 "296-25112-1-ND" H 6550 10750 50  0001 C CNN "DPN"
@@ -703,7 +703,7 @@ U 1 1 5DFB08F5
 P 7000 8700
 F 0 "Q5" H 7000 8965 50  0000 C CNN
 F 1 "NMOS_CDS16" H 7000 8874 50  0000 C CNN
-F 2 "rocketry:CSD16322Q5" H 6200 8900 50  0001 C CNN
+F 2 "footprints:CSD16322Q5" H 6200 8900 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 7100 9050 50  0001 C CNN
 F 4 "CSD16322Q5" H 7200 9200 50  0001 C CNN "MPN"
 F 5 "296-25112-1-ND" H 6550 9200 50  0001 C CNN "DPN"
@@ -769,7 +769,7 @@ U 1 1 5DFB091C
 P 7000 7150
 F 0 "Q4" H 7000 7415 50  0000 C CNN
 F 1 "NMOS_CDS16" H 7000 7324 50  0000 C CNN
-F 2 "rocketry:CSD16322Q5" H 6200 7350 50  0001 C CNN
+F 2 "footprints:CSD16322Q5" H 6200 7350 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 7100 7500 50  0001 C CNN
 F 4 "CSD16322Q5" H 7200 7650 50  0001 C CNN "MPN"
 F 5 "296-25112-1-ND" H 6550 7650 50  0001 C CNN "DPN"
@@ -1166,13 +1166,11 @@ Wire Notes Line
 	3600 8250 7700 8250
 Wire Notes Line
 	3600 9200 700  9200
-Text Notes 8100 5700 0    197  ~ 0
-CONNECT CONTROL PINS TO ATMEGA PINS\n
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0131
 U 1 1 5DDAC02E
 P 2350 6700
-F 0 "#PWR?" H 2350 6450 50  0001 C CNN
+F 0 "#PWR0131" H 2350 6450 50  0001 C CNN
 F 1 "GND" H 2355 6527 50  0000 C CNN
 F 2 "" H 2350 6700 50  0001 C CNN
 F 3 "" H 2350 6700 50  0001 C CNN
@@ -1180,10 +1178,10 @@ F 3 "" H 2350 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Rocketry:C_0.1uF C?
+L Rocketry:C_0.1uF C13
 U 1 1 5DDAB0AE
 P 2350 6550
-F 0 "C?" H 2465 6596 50  0000 L CNN
+F 0 "C13" H 2465 6596 50  0000 L CNN
 F 1 "C_0.1uF" H 2465 6505 50  0000 L CNN
 F 2 "footprints:C_0805_OEM" H 2388 6400 50  0001 C CNN
 F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 2375 6650 50  0001 C CNN
@@ -2875,4 +2873,8 @@ NoConn ~ 9500 9500
 NoConn ~ 9500 7100
 NoConn ~ 10700 7300
 NoConn ~ 10700 7400
+Text Notes 1000 2950 0    59   ~ 0
+Check that no connects are correct\n\nChange library of:\n- fuse\n- solenoid connectors
+NoConn ~ 1550 8900
+NoConn ~ 1550 9000
 $EndSCHEMATC
