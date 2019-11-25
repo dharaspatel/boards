@@ -473,7 +473,7 @@ F 3 "~" V 4800 1660 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 1000 4800 1000
+	3500 1000 4000 1000
 Connection ~ 4800 1000
 Wire Wire Line
 	4800 1000 5050 1000
@@ -782,4 +782,27 @@ F 3 "~" V 1450 6310 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1450 6050 1450 5900
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 5DD35812
+P 4150 1000
+F 0 "TH?" V 3951 1000 50  0000 C CNN
+F 1 "Thermistor_NTC" V 3951 1000 50  0001 C CNN
+F 2 "" H 4150 1050 50  0001 C CNN
+F 3 "~" H 4150 1050 50  0001 C CNN
+	1    4150 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 1000 4800 1000
+Wire Notes Line
+	4650 700  4650 1200
+Wire Notes Line
+	4650 1200 3650 1200
+Wire Notes Line
+	3650 1200 3650 700 
+Wire Notes Line
+	3650 700  4650 700 
+Text Notes 3650 650  0    50   ~ 0
+In-rush current protection
 $EndSCHEMATC
