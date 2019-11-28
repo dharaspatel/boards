@@ -1147,8 +1147,6 @@ $EndComp
 Text Label 4150 9000 2    50   ~ 0
 ctrl_pin_2-1
 Wire Notes Line
-	7950 11100 7950 7150
-Wire Notes Line
 	3600 9200 700  9200
 $Comp
 L power:GND #PWR0131
@@ -1240,8 +1238,6 @@ F 3 "" H 1800 6600 50  0001 C CNN
 $EndComp
 Text Label 950  6300 2    50   ~ 0
 12V
-Wire Notes Line
-	3600 5550 3600 11000
 Text Notes 1200 5750 0    118  ~ 0
 CONNECTORS
 $Bitmap
@@ -2861,21 +2857,6 @@ Text Notes 1000 2950 0    59   ~ 0
 Check that no connects are correct\n\nChange library of:\n- fuse\n- solenoid connectors
 NoConn ~ 1550 8900
 NoConn ~ 1550 9000
-$Comp
-L Analog_Switch:ADG417BN U3
-U 1 1 5DDA1208
-P 2650 7750
-F 0 "U3" H 2650 8017 50  0000 C CNN
-F 1 "ADG417BN" H 2650 7926 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 2650 7650 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG417.pdf" H 2650 7750 50  0001 C CNN
-	1    2650 7750
-	1    0    0    -1  
-$EndComp
-Text Label 2350 7750 2    50   ~ 0
-12V
-Text Label 2950 7750 0    50   ~ 0
-12V_Switch
 Text Label 5400 7250 0    50   ~ 0
 12V_Switch
 Text Label 7400 7250 0    50   ~ 0
@@ -2892,5 +2873,23 @@ Wire Notes Line
 	3600 8250 7950 8250
 Wire Notes Line
 	3600 9700 7950 9700
-NoConn ~ 2650 7950
+$Comp
+L Switch:SW_DPST_x2 SW1
+U 1 1 5DE0F544
+P 2600 7800
+F 0 "SW1" H 2600 8035 50  0000 C CNN
+F 1 "SW_DPST_x2" H 2600 7944 50  0000 C CNN
+F 2 "" H 2600 7800 50  0001 C CNN
+F 3 "~" H 2600 7800 50  0001 C CNN
+	1    2600 7800
+	1    0    0    -1  
+$EndComp
+Text Label 2400 7800 2    59   ~ 0
+12V
+Text Label 2800 7800 0    59   ~ 0
+12V_Switch
+Wire Notes Line
+	7950 6650 7950 11100
+Wire Notes Line
+	3600 5550 3600 11000
 $EndSCHEMATC
