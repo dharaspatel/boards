@@ -1064,92 +1064,92 @@ Wire Notes Line
 $Comp
 L power:GND #PWR0131
 U 1 1 5DDAC02E
-P 2350 6700
-F 0 "#PWR0131" H 2350 6450 50  0001 C CNN
-F 1 "GND" H 2355 6527 50  0000 C CNN
-F 2 "" H 2350 6700 50  0001 C CNN
-F 3 "" H 2350 6700 50  0001 C CNN
-	1    2350 6700
+P 2600 6600
+F 0 "#PWR0131" H 2600 6350 50  0001 C CNN
+F 1 "GND" H 2605 6427 50  0000 C CNN
+F 2 "" H 2600 6600 50  0001 C CNN
+F 3 "" H 2600 6600 50  0001 C CNN
+	1    2600 6600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Rocketry:C_0.1uF C13
 U 1 1 5DDAB0AE
-P 2350 6550
-F 0 "C13" H 2465 6596 50  0000 L CNN
-F 1 "C_0.1uF" H 2465 6505 50  0000 L CNN
-F 2 "footprints:C_0805_OEM" H 2388 6400 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 2375 6650 50  0001 C CNN
-F 4 "DK" H 2350 6550 60  0001 C CNN "MFN"
-F 5 "478-3352-1-ND" H 2350 6550 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 2775 7050 60  0001 C CNN "PurchasingLink"
-	1    2350 6550
+P 2600 6450
+F 0 "C13" H 2715 6496 50  0000 L CNN
+F 1 "C_0.1uF" H 2715 6405 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 2638 6300 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 2625 6550 50  0001 C CNN
+F 4 "DK" H 2600 6450 60  0001 C CNN "MFN"
+F 5 "478-3352-1-ND" H 2600 6450 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 3025 6950 60  0001 C CNN "PurchasingLink"
+	1    2600 6450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 6300 2650 6300
-Connection ~ 2350 6300
+	2600 6200 2900 6200
+Connection ~ 2600 6200
 Wire Wire Line
-	2350 6300 2350 6400
+	2600 6200 2600 6300
 Wire Wire Line
-	2100 6300 2350 6300
+	2350 6200 2600 6200
 Text Label 2650 6300 0    59   ~ 0
 5V
 $Comp
 L power:GND #PWR0124
 U 1 1 5DD00003
-P 1250 6700
-F 0 "#PWR0124" H 1250 6450 50  0001 C CNN
-F 1 "GND" H 1255 6527 50  0000 C CNN
-F 2 "" H 1250 6700 50  0001 C CNN
-F 3 "" H 1250 6700 50  0001 C CNN
-	1    1250 6700
+P 1500 6600
+F 0 "#PWR0124" H 1500 6350 50  0001 C CNN
+F 1 "GND" H 1505 6427 50  0000 C CNN
+F 2 "" H 1500 6600 50  0001 C CNN
+F 3 "" H 1500 6600 50  0001 C CNN
+	1    1500 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 6300 1500 6300
-Connection ~ 1250 6300
+	1500 6200 1750 6200
+Connection ~ 1500 6200
 Wire Wire Line
-	1250 6300 1250 6400
+	1500 6200 1500 6300
 Wire Wire Line
-	950  6300 1250 6300
+	1200 6200 1500 6200
 $Comp
 L Rocketry:C_0.33uF C5
 U 1 1 5DEDBC87
-P 1250 6550
-F 0 "C5" H 1135 6504 50  0000 R CNN
-F 1 "C_0.33uF" H 1135 6595 50  0000 R CNN
-F 2 "footprints:C_0805_OEM" H 1288 6400 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 1275 6650 50  0001 C CNN
-F 4 "DK" H 1250 6550 60  0001 C CNN "MFN"
-F 5 "478-5273-1-ND" H 1250 6550 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/products/en/capacitors/ceramic-capacitors/60?k=cap&k=&pkeyword=cap&pv7=2&pv7=274&pv7=250&pv7=17&pv7=6&pv1989=0&pv2049=u0.33%C2%B5F&pv3=2&pv14=9&pv16=6&sf=1&FV=ffe0003c&quantity=&ColumnSort=0&page=1&stock=1&datasheet=1&pageSize=25" H 1675 7050 60  0001 C CNN "PurchasingLink"
-	1    1250 6550
+P 1500 6450
+F 0 "C5" H 1385 6404 50  0000 R CNN
+F 1 "C_0.33uF" H 1385 6495 50  0000 R CNN
+F 2 "footprints:C_0805_OEM" H 1538 6300 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 1525 6550 50  0001 C CNN
+F 4 "DK" H 1500 6450 60  0001 C CNN "MFN"
+F 5 "478-5273-1-ND" H 1500 6450 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/products/en/capacitors/ceramic-capacitors/60?k=cap&k=&pkeyword=cap&pv7=2&pv7=274&pv7=250&pv7=17&pv7=6&pv1989=0&pv2049=u0.33%C2%B5F&pv3=2&pv14=9&pv16=6&sf=1&FV=ffe0003c&quantity=&ColumnSort=0&page=1&stock=1&datasheet=1&pageSize=25" H 1925 6950 60  0001 C CNN "PurchasingLink"
+	1    1500 6450
 	-1   0    0    1   
 $EndComp
 $Comp
 L Regulator_Linear:AMS1117-5.0 U1
 U 1 1 5DDA38F2
-P 1800 6300
-F 0 "U1" H 1800 6542 50  0000 C CNN
-F 1 "L78M05CDT-TR " H 1800 6451 50  0000 C CNN
-F 2 "footprints:L78M05CDT-TR" H 1800 6500 50  0001 C CNN
-F 3 "www.st.com/content/ccc/resource/technical/document/datasheet/d7/5f/dc/5c/d5/b6/48/7c/CD00000447.pdf/files/CD00000447.pdf/jcr:content/translations/en.CD00000447.pdf" H 1900 6050 50  0001 C CNN
-	1    1800 6300
+P 2050 6200
+F 0 "U1" H 2050 6442 50  0000 C CNN
+F 1 "L78M05CDT-TR " H 2050 6351 50  0000 C CNN
+F 2 "footprints:L78M05CDT-TR" H 2050 6400 50  0001 C CNN
+F 3 "www.st.com/content/ccc/resource/technical/document/datasheet/d7/5f/dc/5c/d5/b6/48/7c/CD00000447.pdf/files/CD00000447.pdf/jcr:content/translations/en.CD00000447.pdf" H 2150 5950 50  0001 C CNN
+	1    2050 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0118
 U 1 1 5DEE7B7E
-P 1800 6600
-F 0 "#PWR0118" H 1800 6350 50  0001 C CNN
-F 1 "GND" H 1805 6427 50  0000 C CNN
-F 2 "" H 1800 6600 50  0001 C CNN
-F 3 "" H 1800 6600 50  0001 C CNN
-	1    1800 6600
+P 2050 6500
+F 0 "#PWR0118" H 2050 6250 50  0001 C CNN
+F 1 "GND" H 2055 6327 50  0000 C CNN
+F 2 "" H 2050 6500 50  0001 C CNN
+F 3 "" H 2050 6500 50  0001 C CNN
+	1    2050 6500
 	1    0    0    -1  
 $EndComp
-Text Label 950  6300 2    50   ~ 0
+Text Label 1200 6200 2    50   ~ 0
 12V
 Text Notes 1200 5750 0    118  ~ 0
 CONNECTORS
@@ -2900,4 +2900,6 @@ Text Label 2850 7450 3    59   ~ 0
 12V_Switch
 Text Notes 2650 7050 0    59   ~ 0
 switch\n
+Text Notes 1950 6950 0    59   ~ 0
+fuse
 $EndSCHEMATC
