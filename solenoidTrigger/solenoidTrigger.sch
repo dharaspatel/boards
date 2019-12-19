@@ -2904,4 +2904,6 @@ Text Notes 1950 6950 0    59   ~ 0
 fuse
 Text Notes 5100 5000 0    59   ~ 0
 - some pins and their purposes in the schematic don't match the pinout diagram\n- in the layout editor, some of the pins don't match the schematic: (ground pins at 3, 5, 21 and VCC at 4,6)
+Text Notes 4850 5200 0    118  ~ 0
+seems resolved, the pinout in the atmega datasheet is correct\n
 $EndSCHEMATC
