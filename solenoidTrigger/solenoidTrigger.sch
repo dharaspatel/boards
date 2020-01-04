@@ -2906,4 +2906,40 @@ Text Notes 5100 5000 0    59   ~ 0
 - some pins and their purposes in the schematic don't match the pinout diagram\n- in the layout editor, some of the pins don't match the schematic: (ground pins at 3, 5, 21 and VCC at 4,6)
 Text Notes 4850 5200 0    118  ~ 0
 seems resolved, the pinout in the atmega datasheet is correct\n
+$Comp
+L Rocketry:SS110LW D?
+U 1 1 5E107C0A
+P 5000 8050
+F 0 "D?" H 5000 8266 50  0000 C CNN
+F 1 "SS110LW" H 5000 8175 50  0000 C CNN
+F 2 "footprints:D_SOD-123W_OEM" H 4900 8050 50  0001 C CNN
+F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 5000 8150 50  0001 C CNN
+F 4 "DK" H 5200 8350 60  0001 C CNN "MFN"
+F 5 "SS110LWRVGCT-ND" H 5100 8250 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 5300 8450 60  0001 C CNN "PurchasingLink"
+	1    5000 8050
+	1    0    0    -1  
+$EndComp
+Text Label 5150 8050 0    50   ~ 0
+ctrl_pin_1-1
+Text Label 4850 8050 2    50   ~ 0
+12V_Switch
+$Comp
+L Rocketry:SS110LW D?
+U 1 1 5E14DE1F
+P 6950 8050
+F 0 "D?" H 6950 8266 50  0000 C CNN
+F 1 "SS110LW" H 6950 8175 50  0000 C CNN
+F 2 "footprints:D_SOD-123W_OEM" H 6850 8050 50  0001 C CNN
+F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 6950 8150 50  0001 C CNN
+F 4 "DK" H 7150 8350 60  0001 C CNN "MFN"
+F 5 "SS110LWRVGCT-ND" H 7050 8250 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 7250 8450 60  0001 C CNN "PurchasingLink"
+	1    6950 8050
+	1    0    0    -1  
+$EndComp
+Text Label 7100 8050 0    50   ~ 0
+ctrl_pin_1-2
+Text Label 6800 8050 2    50   ~ 0
+12V_Switch
 $EndSCHEMATC
