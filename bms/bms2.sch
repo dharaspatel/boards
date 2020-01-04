@@ -1,0 +1,326 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E121EBF
+P 1900 4650
+F 0 "L?" H 1900 4865 50  0000 C CNN
+F 1 "INDUCTOR" H 1900 4774 50  0000 C CNN
+F 2 "" H 1900 4650 50  0001 C CNN
+F 3 "~" H 1900 4650 50  0001 C CNN
+	1    1900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E121F6F
+P 1050 4800
+F 0 "C?" H 1165 4846 50  0000 L CNN
+F 1 "C" H 1165 4755 50  0000 L CNN
+F 2 "" H 1088 4650 50  0001 C CNN
+F 3 "~" H 1050 4800 50  0001 C CNN
+	1    1050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L formula:SW_Push_SPST_NO SW?
+U 1 1 5E1220C9
+P 6000 4650
+F 0 "SW?" H 6000 4935 50  0000 C CNN
+F 1 "SW_Push_SPST_NO" H 6000 4844 50  0000 C CNN
+F 2 "footprints:SW_B3U-1000P_4.2x1.7mm" H 6000 4700 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" H 6000 4700 50  0001 C CNN
+F 4 "DK" H 6300 5000 50  0001 C CNN "MFN"
+F 5 "SW1020CT-ND" H 6200 4900 50  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357A" H 6400 5100 50  0001 C CNN "PurchasingLink"
+	1    6000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E12235B
+P 1550 4800
+F 0 "D?" V 1504 4879 50  0000 L CNN
+F 1 "D" V 1595 4879 50  0000 L CNN
+F 2 "" H 1550 4800 50  0001 C CNN
+F 3 "~" H 1550 4800 50  0001 C CNN
+	1    1550 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E1223CA
+P 2250 4800
+F 0 "C?" H 2365 4846 50  0000 L CNN
+F 1 "C" H 2365 4755 50  0000 L CNN
+F 2 "" H 2288 4650 50  0001 C CNN
+F 3 "~" H 2250 4800 50  0001 C CNN
+	1    2250 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 4650
+Wire Wire Line
+	1550 4650 1650 4650
+Wire Wire Line
+	2150 4650 2250 4650
+Connection ~ 2250 4650
+Wire Wire Line
+	2250 4650 2650 4650
+Wire Wire Line
+	1050 4950 1550 4950
+Connection ~ 1550 4950
+Wire Wire Line
+	1550 4950 2250 4950
+Wire Wire Line
+	1050 4650 900  4650
+Connection ~ 1050 4650
+Wire Wire Line
+	1050 4950 900  4950
+Connection ~ 1050 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5E1226F8
+P 900 4950
+F 0 "#PWR?" H 900 4700 50  0001 C CNN
+F 1 "GND" H 905 4777 50  0000 C CNN
+F 2 "" H 900 4950 50  0001 C CNN
+F 3 "" H 900 4950 50  0001 C CNN
+	1    900  4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U?
+U 1 1 5E122B7E
+P 4000 5050
+F 0 "U?" H 4000 5417 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 4000 5326 50  0000 C CNN
+F 2 "" H 4000 5050 50  0001 C CNN
+F 3 "~" H 4000 5050 50  0001 C CNN
+	1    4000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E122C29
+P 2650 4800
+F 0 "R?" H 2720 4846 50  0000 L CNN
+F 1 "R" H 2720 4755 50  0000 L CNN
+F 2 "" V 2580 4800 50  0001 C CNN
+F 3 "~" H 2650 4800 50  0001 C CNN
+	1    2650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E122F2C
+P 3000 4650
+F 0 "R?" V 2793 4650 50  0000 C CNN
+F 1 "R" V 2884 4650 50  0000 C CNN
+F 2 "" V 2930 4650 50  0001 C CNN
+F 3 "~" H 3000 4650 50  0001 C CNN
+	1    3000 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E122FD7
+P 3350 4800
+F 0 "R?" H 3280 4754 50  0000 R CNN
+F 1 "R" H 3280 4845 50  0000 R CNN
+F 2 "" V 3280 4800 50  0001 C CNN
+F 3 "~" H 3350 4800 50  0001 C CNN
+	1    3350 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 4650 3350 4650
+Wire Wire Line
+	2650 4650 2850 4650
+Connection ~ 2650 4650
+Wire Wire Line
+	2650 4950 2650 5150
+Wire Wire Line
+	2650 5150 3450 5150
+Wire Wire Line
+	3350 4950 3700 4950
+$Comp
+L Device:Q_PNP_BCE Q?
+U 1 1 5E123D91
+P 3550 5600
+F 0 "Q?" H 3741 5554 50  0000 L CNN
+F 1 "Q_PNP_BCE" H 3741 5645 50  0000 L CNN
+F 2 "" H 3750 5700 50  0001 C CNN
+F 3 "~" H 3550 5600 50  0001 C CNN
+	1    3550 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 5400 3450 5150
+Connection ~ 3450 5150
+Wire Wire Line
+	3450 5150 3700 5150
+$Comp
+L Device:D_Zener_ALT D?
+U 1 1 5E1240DB
+P 4850 5050
+F 0 "D?" V 4804 5129 50  0000 L CNN
+F 1 "D_Zener_ALT" V 4895 5129 50  0000 L CNN
+F 2 "" H 4850 5050 50  0001 C CNN
+F 3 "~" H 4850 5050 50  0001 C CNN
+	1    4850 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 5050 4300 5600
+Wire Wire Line
+	4300 5600 3750 5600
+$Comp
+L Device:R R?
+U 1 1 5E124337
+P 3450 6050
+F 0 "R?" H 3380 6004 50  0000 R CNN
+F 1 "R" H 3380 6095 50  0000 R CNN
+F 2 "" V 3380 6050 50  0001 C CNN
+F 3 "~" H 3450 6050 50  0001 C CNN
+	1    3450 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 5850 4850 5200
+Wire Wire Line
+	3450 5800 3450 5850
+Wire Wire Line
+	3450 5850 4850 5850
+Connection ~ 3450 5850
+Wire Wire Line
+	3450 5850 3450 5900
+$Comp
+L power:GND #PWR?
+U 1 1 5E12489C
+P 3450 6200
+F 0 "#PWR?" H 3450 5950 50  0001 C CNN
+F 1 "GND" H 3455 6027 50  0000 C CNN
+F 2 "" H 3450 6200 50  0001 C CNN
+F 3 "" H 3450 6200 50  0001 C CNN
+	1    3450 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4650 4850 4650
+Connection ~ 3350 4650
+Wire Wire Line
+	4850 4900 4850 4650
+Connection ~ 4850 4650
+$Comp
+L Device:R R?
+U 1 1 5E124D41
+P 5550 4800
+F 0 "R?" H 5480 4754 50  0000 R CNN
+F 1 "R" H 5480 4845 50  0000 R CNN
+F 2 "" V 5480 4800 50  0001 C CNN
+F 3 "~" H 5550 4800 50  0001 C CNN
+	1    5550 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 4650 5550 4650
+Connection ~ 5550 4650
+Wire Wire Line
+	5550 4650 5800 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5E125046
+P 5550 4950
+F 0 "#PWR?" H 5550 4700 50  0001 C CNN
+F 1 "GND" H 5555 4777 50  0000 C CNN
+F 2 "" H 5550 4950 50  0001 C CNN
+F 3 "" H 5550 4950 50  0001 C CNN
+	1    5550 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4650 1550 4650
+Text Notes 850  4300 0    50   ~ 10
+CC/CV Charging
+Text Notes 850  2350 0    50   ~ 10
+CC Discharging
+$Comp
+L Device:Opamp_Dual_Generic U?
+U 1 1 5E125949
+P 2250 2800
+F 0 "U?" H 2250 3167 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 2250 3076 50  0000 C CNN
+F 2 "" H 2250 2800 50  0001 C CNN
+F 3 "~" H 2250 2800 50  0001 C CNN
+	1    2250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E125A98
+P 4000 2050
+F 0 "D?" V 4038 1933 50  0000 R CNN
+F 1 "LED" V 3947 1933 50  0000 R CNN
+F 2 "" H 4000 2050 50  0001 C CNN
+F 3 "~" H 4000 2050 50  0001 C CNN
+	1    4000 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E1261F8
+P 2100 3350
+F 0 "C?" V 1848 3350 50  0000 C CNN
+F 1 "C" V 1939 3350 50  0000 C CNN
+F 2 "" H 2138 3200 50  0001 C CNN
+F 3 "~" H 2100 3350 50  0001 C CNN
+	1    2100 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E1262AB
+P 3000 2800
+F 0 "R?" V 3207 2800 50  0000 C CNN
+F 1 "R" V 3116 2800 50  0000 C CNN
+F 2 "" V 2930 2800 50  0001 C CNN
+F 3 "~" H 3000 2800 50  0001 C CNN
+	1    3000 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E126395
+P 2050 3650
+F 0 "R?" V 2257 3650 50  0000 C CNN
+F 1 "R" V 2166 3650 50  0000 C CNN
+F 2 "" V 1980 3650 50  0001 C CNN
+F 3 "~" H 2050 3650 50  0001 C CNN
+	1    2050 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E12640F
+P 3950 3200
+F 0 "R?" H 3880 3154 50  0000 R CNN
+F 1 "R" H 3880 3245 50  0000 R CNN
+F 2 "" V 3880 3200 50  0001 C CNN
+F 3 "~" H 3950 3200 50  0001 C CNN
+	1    3950 3200
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
