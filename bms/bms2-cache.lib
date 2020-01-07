@@ -248,6 +248,37 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_Thermocouple
+#
+DEF Device_Thermocouple TC 0 0 N Y 1 F N
+F0 "TC" -120 150 50 H V C CNN
+F1 "Device_Thermocouple" -200 -160 50 H V L CNN
+F2 "" -575 50 50 H I C CNN
+F3 "" -575 50 50 H I C CNN
+$FPLIST
+ PIN?ARRAY*
+ bornier*
+ *Terminal?Block*
+ Thermo*Couple*
+$ENDFPLIST
+DRAW
+C -120 0 10 0 1 0 F
+P 2 0 1 0 -160 -40 -170 -50 N
+P 2 0 1 0 -140 -20 -150 -30 N
+P 2 0 1 0 -120 0 -130 -10 N
+P 2 0 1 0 -100 20 -110 10 N
+P 2 0 1 0 -80 40 -90 30 N
+P 2 0 1 0 -60 60 -70 50 N
+P 2 0 1 0 -40 80 -50 70 N
+P 2 0 1 0 -20 100 -30 90 N
+P 2 0 1 0 0 -100 -10 -100 N
+P 2 0 1 0 0 100 -20 100 N
+P 3 0 1 0 10 -100 -20 -100 -170 50 N
+X + 1 100 100 100 L 50 50 1 1 P
+X - 2 100 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # formula_CONN_02X03
 #
 DEF formula_CONN_02X03 J 0 1 Y N 1 F N

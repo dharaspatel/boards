@@ -667,44 +667,12 @@ Text Label 700  1050 2    50   ~ 0
 B1
 Text Notes 9650 1950 0    50   ~ 0
 Positive terminals of each battery cell 
-Wire Wire Line
-	700  1450 700  1350
-Connection ~ 700  1450
-Wire Wire Line
-	700  1900 700  1800
-Connection ~ 700  1900
 Text Label 700  1700 2    50   ~ 0
 B2
 Text Label 700  2150 2    50   ~ 0
 B3
-$Comp
-L power:GND #PWR?
-U 1 1 5E16DCD5
-P 600 1350
-F 0 "#PWR?" H 600 1100 50  0001 C CNN
-F 1 "GND" H 605 1177 50  0000 C CNN
-F 2 "" H 600 1350 50  0001 C CNN
-F 3 "" H 600 1350 50  0001 C CNN
-	1    600  1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  1350 600  1350
 Wire Wire Line
 	700  1450 700  1700
-$Comp
-L power:GND #PWR?
-U 1 1 5E170367
-P 600 1800
-F 0 "#PWR?" H 600 1550 50  0001 C CNN
-F 1 "GND" H 605 1627 50  0000 C CNN
-F 2 "" H 600 1800 50  0001 C CNN
-F 3 "" H 600 1800 50  0001 C CNN
-	1    600  1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  1800 600  1800
 Wire Wire Line
 	700  1900 700  2150
 $Comp
@@ -874,44 +842,12 @@ Wire Wire Line
 	2550 1900 2400 1900
 Text Label 2400 1050 2    50   ~ 0
 B4
-Wire Wire Line
-	2400 1450 2400 1350
-Connection ~ 2400 1450
-Wire Wire Line
-	2400 1900 2400 1800
-Connection ~ 2400 1900
 Text Label 2400 1700 2    50   ~ 0
 B5
 Text Label 2400 2150 2    50   ~ 0
 B6
-$Comp
-L power:GND #PWR?
-U 1 1 5E177D5A
-P 2300 1350
-F 0 "#PWR?" H 2300 1100 50  0001 C CNN
-F 1 "GND" H 2305 1177 50  0000 C CNN
-F 2 "" H 2300 1350 50  0001 C CNN
-F 3 "" H 2300 1350 50  0001 C CNN
-	1    2300 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 1350 2300 1350
 Wire Wire Line
 	2400 1450 2400 1700
-$Comp
-L power:GND #PWR?
-U 1 1 5E177D62
-P 2300 1800
-F 0 "#PWR?" H 2300 1550 50  0001 C CNN
-F 1 "GND" H 2305 1627 50  0000 C CNN
-F 2 "" H 2300 1800 50  0001 C CNN
-F 3 "" H 2300 1800 50  0001 C CNN
-	1    2300 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 1800 2300 1800
 Wire Wire Line
 	2400 1900 2400 2150
 $Comp
@@ -980,4 +916,57 @@ Text Label 6000 5500 0    50   ~ 0
 Charge
 Wire Wire Line
 	6200 5800 6600 5800
+Text Notes 4900 800  0    50   ~ 10
+Thermal Monitoring\n
+Text Label 10000 2000 2    50   ~ 0
+B1
+Text Label 10000 2100 2    50   ~ 0
+B2
+Text Label 10000 2200 2    50   ~ 0
+B3
+Text Label 10000 2300 2    50   ~ 0
+B4
+Text Label 10000 2400 2    50   ~ 0
+B5
+Text Label 10000 2500 2    50   ~ 0
+B6
+Text Label 5050 950  2    50   ~ 0
+B1
+Text Label 5050 1050 2    50   ~ 0
+B2
+Text Label 5050 1150 2    50   ~ 0
+B3
+Text Label 5050 1250 2    50   ~ 0
+B4
+Text Label 5050 1350 2    50   ~ 0
+B5
+Text Label 5050 1450 2    50   ~ 0
+B6
+Text Label 5600 950  2    50   ~ 0
+T1
+Text Label 5600 1050 2    50   ~ 0
+T2
+Text Label 5600 1150 2    50   ~ 0
+T3
+Text Label 5600 1250 2    50   ~ 0
+T4
+Text Label 5600 1350 2    50   ~ 0
+T5
+Text Label 5600 1450 2    50   ~ 0
+T6
+Wire Wire Line
+	3450 7000 3200 7000
+Text Label 3200 7000 2    50   ~ 0
+VBat
+$Comp
+L Device:Thermocouple TC?
+U 1 1 5E196986
+P 4700 1700
+F 0 "TC?" H 4671 2025 50  0000 C CNN
+F 1 "Thermocouple" H 4671 1934 50  0000 C CNN
+F 2 "" H 4125 1750 50  0001 C CNN
+F 3 "~" H 4125 1750 50  0001 C CNN
+	1    4700 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
