@@ -36,15 +36,15 @@ MOSI
 $Comp
 L Rocketry:CONN_02X03 J8
 U 1 1 5DE2F9C4
-P 2600 9250
-F 0 "J8" H 2600 9565 50  0000 C CNN
-F 1 "CONN_02X03" H 2600 9474 50  0000 C CNN
-F 2 "footprints:Pin_Header_Straight_2x03" H 2600 8050 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" H 2600 8050 50  0001 C CNN
-F 4 "DK" H 2600 9250 60  0001 C CNN "MFN"
-F 5 "609-3234-ND" H 2600 9250 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/amphenol-fci/67997-206HLF/609-3234-ND/1878491" H 3000 9850 60  0001 C CNN "PurchasingLink"
-	1    2600 9250
+P 2600 9150
+F 0 "J8" H 2600 9465 50  0000 C CNN
+F 1 "CONN_02X03" H 2600 9374 50  0000 C CNN
+F 2 "footprints:Pin_Header_Straight_2x03" H 2600 7950 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" H 2600 7950 50  0001 C CNN
+F 4 "DK" H 2600 9150 60  0001 C CNN "MFN"
+F 5 "609-3234-ND" H 2600 9150 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/amphenol-fci/67997-206HLF/609-3234-ND/1878491" H 3000 9750 60  0001 C CNN "PurchasingLink"
+	1    2600 9150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -79,15 +79,15 @@ Wire Wire Line
 	1850 10350 1950 10350
 Wire Wire Line
 	2750 10350 2850 10350
-Text Label 2350 9150 2    50   ~ 0
+Text Label 2350 9050 2    50   ~ 0
 MISO
-Text Label 2350 9250 2    50   ~ 0
+Text Label 2350 9150 2    50   ~ 0
 SCK
-Text Label 2350 9350 2    50   ~ 0
+Text Label 2350 9250 2    50   ~ 0
 RESET
-Text Label 2850 9150 0    50   ~ 0
+Text Label 2850 9050 0    50   ~ 0
 VCC
-Text Label 2850 9250 0    50   ~ 0
+Text Label 2850 9150 0    50   ~ 0
 MOSI
 Text Label 1500 9150 0    50   ~ 0
 CS
@@ -128,12 +128,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0106
 U 1 1 5DB729B1
-P 2850 9350
-F 0 "#PWR0106" H 2850 9100 50  0001 C CNN
-F 1 "GND" H 2855 9177 50  0000 C CNN
-F 2 "" H 2850 9350 50  0001 C CNN
-F 3 "" H 2850 9350 50  0001 C CNN
-	1    2850 9350
+P 2850 9250
+F 0 "#PWR0106" H 2850 9000 50  0001 C CNN
+F 1 "GND" H 2855 9077 50  0000 C CNN
+F 2 "" H 2850 9250 50  0001 C CNN
+F 3 "" H 2850 9250 50  0001 C CNN
+	1    2850 9250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -763,22 +763,22 @@ Text Label 1850 10150 0    50   ~ 0
 12V_Solenoid2
 Text Label 2750 10150 0    50   ~ 0
 12V_Solenoid3
-Text Notes 600  7450 0    50   ~ 0
+Text Notes 750  7450 0    50   ~ 0
 battery
 $Comp
 L power:GND #PWR0123
 U 1 1 5DDB3B00
-P 1300 7600
-F 0 "#PWR0123" H 1300 7350 50  0001 C CNN
-F 1 "GND" H 1305 7427 50  0000 C CNN
-F 2 "" H 1300 7600 50  0001 C CNN
-F 3 "" H 1300 7600 50  0001 C CNN
-	1    1300 7600
+P 1450 7600
+F 0 "#PWR0123" H 1450 7350 50  0001 C CNN
+F 1 "GND" H 1455 7427 50  0000 C CNN
+F 2 "" H 1450 7600 50  0001 C CNN
+F 3 "" H 1450 7600 50  0001 C CNN
+	1    1450 7600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 7500 1300 7600
-Text Notes 2300 8850 0    59   ~ 0
+	1450 7500 1450 7600
+Text Notes 2300 8750 0    59   ~ 0
 programming
 Text Notes 1500 9800 0    59   ~ 0
 solenoid connectors
@@ -1091,7 +1091,7 @@ Wire Wire Line
 	2650 5800 2650 5900
 Wire Wire Line
 	2400 5800 2650 5800
-Text Label 2700 5900 0    59   ~ 0
+Text Label 2950 5800 0    59   ~ 0
 5V
 $Comp
 L power:GND #PWR0124
@@ -2841,19 +2841,19 @@ F 6 "ED2606-ND" H 1400 8500 59  0001 C CNN "DPN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 7500 1300 7500
+	1350 7500 1450 7500
 $Comp
 L Rocketry:OSTTC02 P2
 U 1 1 5DEBC83F
-P 1100 7250
-F 0 "P2" H 1083 7346 59  0000 C CNN
-F 1 "OSTTC02" H 1083 7241 59  0000 C CNN
-F 2 "footprints:OSTTC02" H 1000 7100 59  0001 C CNN
-F 3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX0162.pdf" H 1000 7100 59  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTTC020162/ED2600-ND/614549" H 1100 7250 59  0001 C CNN "Purchasing Link"
-F 5 "OSTTC020162" H 1100 7250 59  0001 C CNN "MPN"
-F 6 " ED2600-ND" H 1100 7250 59  0001 C CNN "DPN"
-	1    1100 7250
+P 1250 7250
+F 0 "P2" H 1233 7346 59  0000 C CNN
+F 1 "OSTTC02" H 1233 7241 59  0000 C CNN
+F 2 "footprints:OSTTC02" H 1150 7100 59  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX0162.pdf" H 1150 7100 59  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTTC020162/ED2600-ND/614549" H 1250 7250 59  0001 C CNN "Purchasing Link"
+F 5 "OSTTC020162" H 1250 7250 59  0001 C CNN "MPN"
+F 6 " ED2600-ND" H 1250 7250 59  0001 C CNN "DPN"
+	1    1250 7250
 	1    0    0    -1  
 $EndComp
 Text Label 2250 7100 3    50   ~ 0
@@ -2901,10 +2901,10 @@ Text Notes 5100 5000 0    59   ~ 0
 Text Notes 4850 5200 0    118  ~ 0
 seems resolved, the pinout in the atmega datasheet is correct\n
 $Comp
-L Rocketry:SS110LW D?
+L Rocketry:SS110LW D8
 U 1 1 5E107C0A
 P 5000 8050
-F 0 "D?" H 5000 8266 50  0000 C CNN
+F 0 "D8" H 5000 8266 50  0000 C CNN
 F 1 "SS110LW" H 5000 8175 50  0000 C CNN
 F 2 "footprints:D_SOD-123W_OEM" H 4900 8050 50  0001 C CNN
 F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 5000 8150 50  0001 C CNN
@@ -2919,10 +2919,10 @@ Text Label 4850 8050 2    50   ~ 0
 Text Label 5150 8050 0    50   ~ 0
 12V_Solenoid1
 $Comp
-L Rocketry:SS110LW D?
+L Rocketry:SS110LW D9
 U 1 1 5E167FE5
 P 6950 8050
-F 0 "D?" H 6950 8266 50  0000 C CNN
+F 0 "D9" H 6950 8266 50  0000 C CNN
 F 1 "SS110LW" H 6950 8175 50  0000 C CNN
 F 2 "footprints:D_SOD-123W_OEM" H 6850 8050 50  0001 C CNN
 F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 6950 8150 50  0001 C CNN
@@ -2937,10 +2937,10 @@ Text Label 6800 8050 2    50   ~ 0
 Text Label 7100 8050 0    50   ~ 0
 12V_Solenoid1
 $Comp
-L Rocketry:SS110LW D?
+L Rocketry:SS110LW D2
 U 1 1 5E16DBBE
 P 4950 9550
-F 0 "D?" H 4950 9766 50  0000 C CNN
+F 0 "D2" H 4950 9766 50  0000 C CNN
 F 1 "SS110LW" H 4950 9675 50  0000 C CNN
 F 2 "footprints:D_SOD-123W_OEM" H 4850 9550 50  0001 C CNN
 F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 4950 9650 50  0001 C CNN
@@ -2955,10 +2955,10 @@ Text Label 4800 9550 2    50   ~ 0
 Text Label 5100 9550 0    50   ~ 0
 12V_Solenoid2
 $Comp
-L Rocketry:SS110LW D?
+L Rocketry:SS110LW D10
 U 1 1 5E1709DF
 P 6950 9550
-F 0 "D?" H 6950 9766 50  0000 C CNN
+F 0 "D10" H 6950 9766 50  0000 C CNN
 F 1 "SS110LW" H 6950 9675 50  0000 C CNN
 F 2 "footprints:D_SOD-123W_OEM" H 6850 9550 50  0001 C CNN
 F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 6950 9650 50  0001 C CNN
@@ -2973,10 +2973,10 @@ Text Label 6800 9550 2    50   ~ 0
 Text Label 7100 9550 0    50   ~ 0
 12V_Solenoid2
 $Comp
-L Rocketry:SS110LW D?
+L Rocketry:SS110LW D7
 U 1 1 5E18EAD4
 P 4950 11050
-F 0 "D?" H 4950 11266 50  0000 C CNN
+F 0 "D7" H 4950 11266 50  0000 C CNN
 F 1 "SS110LW" H 4950 11175 50  0000 C CNN
 F 2 "footprints:D_SOD-123W_OEM" H 4850 11050 50  0001 C CNN
 F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 4950 11150 50  0001 C CNN
@@ -2991,10 +2991,10 @@ Text Label 4800 11050 2    50   ~ 0
 Text Label 5100 11050 0    50   ~ 0
 12V_Solenoid3
 $Comp
-L Rocketry:SS110LW D?
+L Rocketry:SS110LW D11
 U 1 1 5E191B37
 P 6950 11050
-F 0 "D?" H 6950 11266 50  0000 C CNN
+F 0 "D11" H 6950 11266 50  0000 C CNN
 F 1 "SS110LW" H 6950 11175 50  0000 C CNN
 F 2 "footprints:D_SOD-123W_OEM" H 6850 11050 50  0001 C CNN
 F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 6950 11150 50  0001 C CNN
@@ -3012,15 +3012,15 @@ Wire Notes Line
 	3600 5400 3600 11100
 Text Label 2150 7100 3    50   ~ 0
 Source(12V)
-Text Label 1200 7400 0    50   ~ 0
+Text Label 1350 7400 0    50   ~ 0
 Source(12V)
 Text Label 2250 8100 3    50   ~ 0
 12V_High
 $Comp
-L Rocketry:01530008Z F?
+L Rocketry:01530008Z F3
 U 1 1 5E268060
 P 2450 8000
-F 0 "F?" V 2200 7700 50  0000 L CNN
+F 0 "F3" V 2200 7700 50  0000 L CNN
 F 1 "01530008Z" V 2300 7550 50  0000 L CNN
 F 2 "footprints:01530008Z" H 2400 7800 50  0001 C CNN
 F 3 "https://www.littelfuse.com/~/media/commercial-vehicle/datasheets/automotive-fuse-holders/mini/littelfuse_fuse-holders-mini-153-pc-datasheet.pdf" H 2400 7800 50  0001 C CNN
