@@ -2764,7 +2764,7 @@ NoConn ~ 9600 9700
 NoConn ~ 9600 7300
 NoConn ~ 10800 7500
 NoConn ~ 10800 7600
-Text Notes 1000 2950 0    59   ~ 0
+Text Notes 1050 2950 0    59   ~ 0
 Check that no connects are correct\n\nChange library of:\n- fuse\n- switch
 Text Label 5400 7250 0    50   ~ 0
 12V_Switch

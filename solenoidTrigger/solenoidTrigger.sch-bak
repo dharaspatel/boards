@@ -389,60 +389,60 @@ Wire Wire Line
 $Comp
 L Rocketry:NMOS_CDS16 Q3
 U 1 1 5DC05DE9
-P 5000 10200
-F 0 "Q3" H 5000 10465 50  0000 C CNN
-F 1 "NMOS_CDS16" H 5000 10374 50  0000 C CNN
-F 2 "footprints:CSD16322Q5" H 4200 10400 50  0001 C CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 5100 10550 50  0001 C CNN
-F 4 "CSD16322Q5" H 5200 10700 50  0001 C CNN "MPN"
-F 5 "296-25112-1-ND" H 4550 10700 50  0001 C CNN "DPN"
-F 6 "https://www.digikey.com/product-detail/en/texas-instruments/CSD16322Q5/296-25112-1-ND/2138515" H 5400 10850 50  0001 C CNN "PurchasingLink"
-	1    5000 10200
+P 5000 10150
+F 0 "Q3" H 5000 10415 50  0000 C CNN
+F 1 "NMOS_CDS16" H 5000 10324 50  0000 C CNN
+F 2 "footprints:CSD16322Q5" H 4200 10350 50  0001 C CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 5100 10500 50  0001 C CNN
+F 4 "CSD16322Q5" H 5200 10650 50  0001 C CNN "MPN"
+F 5 "296-25112-1-ND" H 4550 10650 50  0001 C CNN "DPN"
+F 6 "https://www.digikey.com/product-detail/en/texas-instruments/CSD16322Q5/296-25112-1-ND/2138515" H 5400 10800 50  0001 C CNN "PurchasingLink"
+	1    5000 10150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 10200 4600 10300
+	4600 10150 4600 10250
 Wire Wire Line
-	4600 10300 4600 10400
-Connection ~ 4600 10300
+	4600 10250 4600 10350
+Connection ~ 4600 10250
 Wire Wire Line
-	5400 10200 5400 10300
-Connection ~ 5400 10300
+	5400 10150 5400 10250
+Connection ~ 5400 10250
 Wire Wire Line
-	5400 10300 5400 10400
+	5400 10250 5400 10350
 Wire Wire Line
-	5400 10400 5400 10500
-Connection ~ 5400 10400
+	5400 10350 5400 10450
+Connection ~ 5400 10350
 $Comp
 L power:GND #PWR0114
 U 1 1 5DAB088E
-P 4150 10800
-F 0 "#PWR0114" H 4150 10550 50  0001 C CNN
-F 1 "GND" H 4155 10627 50  0000 C CNN
-F 2 "" H 4150 10800 50  0001 C CNN
-F 3 "" H 4150 10800 50  0001 C CNN
-	1    4150 10800
+P 4150 10750
+F 0 "#PWR0114" H 4150 10500 50  0001 C CNN
+F 1 "GND" H 4155 10577 50  0000 C CNN
+F 2 "" H 4150 10750 50  0001 C CNN
+F 3 "" H 4150 10750 50  0001 C CNN
+	1    4150 10750
 	1    0    0    -1  
 $EndComp
-Text Label 4600 10300 2    50   ~ 0
+Text Label 4600 10250 2    50   ~ 0
 12V_Solenoid3
 $Comp
 L Rocketry:R_1K R4
 U 1 1 5DC4DD1C
-P 4150 10650
-F 0 "R4" H 4220 10696 50  0000 L CNN
-F 1 "R_1K" H 4220 10605 50  0000 L CNN
-F 2 "footprints:R_0805_OEM" H 4080 10650 50  0001 C CNN
-F 3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" H 4230 10650 50  0001 C CNN
-F 4 "DK" H 4150 10650 60  0001 C CNN "MFN"
-F 5 "RNCP0805FTD1K00CT-ND" H 4150 10650 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/products/en?keywords=RNCP0805FTD1K00CT-ND" H 4630 11050 60  0001 C CNN "PurchasingLink"
-	1    4150 10650
+P 4150 10600
+F 0 "R4" H 4220 10646 50  0000 L CNN
+F 1 "R_1K" H 4220 10555 50  0000 L CNN
+F 2 "footprints:R_0805_OEM" H 4080 10600 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" H 4230 10600 50  0001 C CNN
+F 4 "DK" H 4150 10600 60  0001 C CNN "MFN"
+F 5 "RNCP0805FTD1K00CT-ND" H 4150 10600 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/products/en?keywords=RNCP0805FTD1K00CT-ND" H 4630 11000 60  0001 C CNN "PurchasingLink"
+	1    4150 10600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 10500 4150 10500
-Text Notes 5250 10700 0    50   ~ 0
+	4600 10450 4150 10450
+Text Notes 5250 10650 0    50   ~ 0
 transistor
 Wire Wire Line
 	1500 8650 1800 8650
@@ -509,7 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 8800 9050 8750
 Connection ~ 9050 8800
-Text Label 4150 10500 2    50   ~ 0
+Text Label 4150 10450 2    50   ~ 0
 ctrl_pin_3-1
 Text Label 9600 9000 2    50   ~ 0
 PLED1
@@ -580,59 +580,59 @@ transistor
 $Comp
 L Rocketry:NMOS_CDS16 Q6
 U 1 1 5DFB08D1
-P 7000 10250
-F 0 "Q6" H 7000 10515 50  0000 C CNN
-F 1 "NMOS_CDS16" H 7000 10424 50  0000 C CNN
-F 2 "footprints:CSD16322Q5" H 6200 10450 50  0001 C CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 7100 10600 50  0001 C CNN
-F 4 "CSD16322Q5" H 7200 10750 50  0001 C CNN "MPN"
-F 5 "296-25112-1-ND" H 6550 10750 50  0001 C CNN "DPN"
-F 6 "https://www.digikey.com/product-detail/en/texas-instruments/CSD16322Q5/296-25112-1-ND/2138515" H 7400 10900 50  0001 C CNN "PurchasingLink"
-	1    7000 10250
+P 7000 10200
+F 0 "Q6" H 7000 10465 50  0000 C CNN
+F 1 "NMOS_CDS16" H 7000 10374 50  0000 C CNN
+F 2 "footprints:CSD16322Q5" H 6200 10400 50  0001 C CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 7100 10550 50  0001 C CNN
+F 4 "CSD16322Q5" H 7200 10700 50  0001 C CNN "MPN"
+F 5 "296-25112-1-ND" H 6550 10700 50  0001 C CNN "DPN"
+F 6 "https://www.digikey.com/product-detail/en/texas-instruments/CSD16322Q5/296-25112-1-ND/2138515" H 7400 10850 50  0001 C CNN "PurchasingLink"
+	1    7000 10200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 10250 6600 10350
+	6600 10200 6600 10300
 Wire Wire Line
-	6600 10350 6600 10450
-Connection ~ 6600 10350
+	6600 10300 6600 10400
+Connection ~ 6600 10300
 Wire Wire Line
-	7400 10250 7400 10350
-Connection ~ 7400 10350
+	7400 10200 7400 10300
+Connection ~ 7400 10300
 Wire Wire Line
-	7400 10350 7400 10450
+	7400 10300 7400 10400
 Wire Wire Line
-	7400 10450 7400 10550
-Connection ~ 7400 10450
+	7400 10400 7400 10500
+Connection ~ 7400 10400
 $Comp
 L power:GND #PWR0120
 U 1 1 5DFB08DF
-P 6150 10850
-F 0 "#PWR0120" H 6150 10600 50  0001 C CNN
-F 1 "GND" H 6155 10677 50  0000 C CNN
-F 2 "" H 6150 10850 50  0001 C CNN
-F 3 "" H 6150 10850 50  0001 C CNN
-	1    6150 10850
+P 6150 10800
+F 0 "#PWR0120" H 6150 10550 50  0001 C CNN
+F 1 "GND" H 6155 10627 50  0000 C CNN
+F 2 "" H 6150 10800 50  0001 C CNN
+F 3 "" H 6150 10800 50  0001 C CNN
+	1    6150 10800
 	1    0    0    -1  
 $EndComp
-Text Label 6600 10350 2    50   ~ 0
+Text Label 6600 10300 2    50   ~ 0
 12V_Solenoid3
 $Comp
 L Rocketry:R_1K R7
 U 1 1 5DFB08E9
-P 6150 10700
-F 0 "R7" H 6220 10746 50  0000 L CNN
-F 1 "R_1K" H 6220 10655 50  0000 L CNN
-F 2 "footprints:R_0805_OEM" H 6080 10700 50  0001 C CNN
-F 3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" H 6230 10700 50  0001 C CNN
-F 4 "DK" H 6150 10700 60  0001 C CNN "MFN"
-F 5 "RNCP0805FTD1K00CT-ND" H 6150 10700 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/products/en?keywords=RNCP0805FTD1K00CT-ND" H 6630 11100 60  0001 C CNN "PurchasingLink"
-	1    6150 10700
+P 6150 10650
+F 0 "R7" H 6220 10696 50  0000 L CNN
+F 1 "R_1K" H 6220 10605 50  0000 L CNN
+F 2 "footprints:R_0805_OEM" H 6080 10650 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" H 6230 10650 50  0001 C CNN
+F 4 "DK" H 6150 10650 60  0001 C CNN "MFN"
+F 5 "RNCP0805FTD1K00CT-ND" H 6150 10650 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/products/en?keywords=RNCP0805FTD1K00CT-ND" H 6630 11050 60  0001 C CNN "PurchasingLink"
+	1    6150 10650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 10550 6150 10550
+	6600 10500 6150 10500
 Text Label 6150 9000 2    50   ~ 0
 ctrl_pin_2-2
 $Comp
@@ -693,9 +693,9 @@ Wire Wire Line
 	6600 9000 6150 9000
 Text Notes 7250 9150 0    50   ~ 0
 transistor
-Text Notes 7250 10750 0    50   ~ 0
+Text Notes 7250 10700 0    50   ~ 0
 transistor
-Text Label 6150 10550 2    50   ~ 0
+Text Label 6150 10500 2    50   ~ 0
 ctrl_pin_3-2
 Text Label 6150 7450 2    50   ~ 0
 ctrl_pin_1-2
@@ -2774,14 +2774,14 @@ Text Label 5400 8800 0    50   ~ 0
 12V_Switch
 Text Label 7400 8800 0    50   ~ 0
 12V_Switch
-Text Label 5400 10300 0    50   ~ 0
+Text Label 5400 10250 0    50   ~ 0
 12V_Switch
-Text Label 7400 10350 0    50   ~ 0
+Text Label 7400 10300 0    50   ~ 0
 12V_Switch
 Wire Notes Line
 	3600 8250 7950 8250
 Wire Notes Line
-	3600 9700 7950 9700
+	3600 9750 7950 9750
 Wire Notes Line
 	7950 6650 7950 11100
 $Comp
@@ -2903,111 +2903,35 @@ seems resolved, the pinout in the atmega datasheet is correct\n
 $Comp
 L Rocketry:SS110LW D8
 U 1 1 5E107C0A
-P 5000 8050
-F 0 "D8" H 5000 8266 50  0000 C CNN
-F 1 "SS110LW" H 5000 8175 50  0000 C CNN
-F 2 "footprints:D_SOD-123W_OEM" H 4900 8050 50  0001 C CNN
-F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 5000 8150 50  0001 C CNN
-F 4 "DK" H 5200 8350 60  0001 C CNN "MFN"
-F 5 "SS110LWRVGCT-ND" H 5100 8250 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 5300 8450 60  0001 C CNN "PurchasingLink"
-	1    5000 8050
+P 5150 7900
+F 0 "D8" H 5150 8116 50  0000 C CNN
+F 1 "SS110LW" H 5150 8025 50  0000 C CNN
+F 2 "footprints:D_SOD-123W_OEM" H 5050 7900 50  0001 C CNN
+F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 5150 8000 50  0001 C CNN
+F 4 "DK" H 5350 8200 60  0001 C CNN "MFN"
+F 5 "SS110LWRVGCT-ND" H 5250 8100 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 5450 8300 60  0001 C CNN "PurchasingLink"
+	1    5150 7900
 	1    0    0    -1  
 $EndComp
-Text Label 4850 8050 2    50   ~ 0
+Text Label 5000 7900 2    50   ~ 0
 12V_Switch
-Text Label 5150 8050 0    50   ~ 0
-12V_Solenoid1
-$Comp
-L Rocketry:SS110LW D9
-U 1 1 5E167FE5
-P 6950 8050
-F 0 "D9" H 6950 8266 50  0000 C CNN
-F 1 "SS110LW" H 6950 8175 50  0000 C CNN
-F 2 "footprints:D_SOD-123W_OEM" H 6850 8050 50  0001 C CNN
-F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 6950 8150 50  0001 C CNN
-F 4 "DK" H 7150 8350 60  0001 C CNN "MFN"
-F 5 "SS110LWRVGCT-ND" H 7050 8250 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 7250 8450 60  0001 C CNN "PurchasingLink"
-	1    6950 8050
-	1    0    0    -1  
-$EndComp
-Text Label 6800 8050 2    50   ~ 0
-12V_Switch
-Text Label 7100 8050 0    50   ~ 0
-12V_Solenoid1
-$Comp
-L Rocketry:SS110LW D2
-U 1 1 5E16DBBE
-P 4950 9550
-F 0 "D2" H 4950 9766 50  0000 C CNN
-F 1 "SS110LW" H 4950 9675 50  0000 C CNN
-F 2 "footprints:D_SOD-123W_OEM" H 4850 9550 50  0001 C CNN
-F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 4950 9650 50  0001 C CNN
-F 4 "DK" H 5150 9850 60  0001 C CNN "MFN"
-F 5 "SS110LWRVGCT-ND" H 5050 9750 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 5250 9950 60  0001 C CNN "PurchasingLink"
-	1    4950 9550
-	1    0    0    -1  
-$EndComp
-Text Label 4800 9550 2    50   ~ 0
-12V_Switch
-Text Label 5100 9550 0    50   ~ 0
-12V_Solenoid2
-$Comp
-L Rocketry:SS110LW D10
-U 1 1 5E1709DF
-P 6950 9550
-F 0 "D10" H 6950 9766 50  0000 C CNN
-F 1 "SS110LW" H 6950 9675 50  0000 C CNN
-F 2 "footprints:D_SOD-123W_OEM" H 6850 9550 50  0001 C CNN
-F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 6950 9650 50  0001 C CNN
-F 4 "DK" H 7150 9850 60  0001 C CNN "MFN"
-F 5 "SS110LWRVGCT-ND" H 7050 9750 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 7250 9950 60  0001 C CNN "PurchasingLink"
-	1    6950 9550
-	1    0    0    -1  
-$EndComp
-Text Label 6800 9550 2    50   ~ 0
-12V_Switch
-Text Label 7100 9550 0    50   ~ 0
-12V_Solenoid2
 $Comp
 L Rocketry:SS110LW D7
 U 1 1 5E18EAD4
-P 4950 11050
-F 0 "D7" H 4950 11266 50  0000 C CNN
-F 1 "SS110LW" H 4950 11175 50  0000 C CNN
-F 2 "footprints:D_SOD-123W_OEM" H 4850 11050 50  0001 C CNN
-F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 4950 11150 50  0001 C CNN
-F 4 "DK" H 5150 11350 60  0001 C CNN "MFN"
-F 5 "SS110LWRVGCT-ND" H 5050 11250 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 5250 11450 60  0001 C CNN "PurchasingLink"
-	1    4950 11050
+P 5150 10900
+F 0 "D7" H 5150 11116 50  0000 C CNN
+F 1 "SS110LW" H 5150 11025 50  0000 C CNN
+F 2 "footprints:D_SOD-123W_OEM" H 5050 10900 50  0001 C CNN
+F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 5150 11000 50  0001 C CNN
+F 4 "DK" H 5350 11200 60  0001 C CNN "MFN"
+F 5 "SS110LWRVGCT-ND" H 5250 11100 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 5450 11300 60  0001 C CNN "PurchasingLink"
+	1    5150 10900
 	1    0    0    -1  
 $EndComp
-Text Label 4800 11050 2    50   ~ 0
+Text Label 5000 10900 2    50   ~ 0
 12V_Switch
-Text Label 5100 11050 0    50   ~ 0
-12V_Solenoid3
-$Comp
-L Rocketry:SS110LW D11
-U 1 1 5E191B37
-P 6950 11050
-F 0 "D11" H 6950 11266 50  0000 C CNN
-F 1 "SS110LW" H 6950 11175 50  0000 C CNN
-F 2 "footprints:D_SOD-123W_OEM" H 6850 11050 50  0001 C CNN
-F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 6950 11150 50  0001 C CNN
-F 4 "DK" H 7150 11350 60  0001 C CNN "MFN"
-F 5 "SS110LWRVGCT-ND" H 7050 11250 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 7250 11450 60  0001 C CNN "PurchasingLink"
-	1    6950 11050
-	1    0    0    -1  
-$EndComp
-Text Label 6800 11050 2    50   ~ 0
-12V_Switch
-Text Label 7100 11050 0    50   ~ 0
-12V_Solenoid3
 Wire Notes Line
 	3600 5400 3600 11100
 Text Label 2150 7100 3    50   ~ 0
@@ -3039,4 +2963,59 @@ Text Label 11250 7700 1    50   ~ 0
 Source(12V)
 Text Notes 800  6100 0    59   ~ 0
 linear\nregulator\n
+$Comp
+L power:GND #PWR01
+U 1 1 5E1CD4CF
+P 5300 7950
+F 0 "#PWR01" H 5300 7700 50  0001 C CNN
+F 1 "GND" H 5305 7777 50  0000 C CNN
+F 2 "" H 5300 7950 50  0001 C CNN
+F 3 "" H 5300 7950 50  0001 C CNN
+	1    5300 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 7900 5300 7950
+$Comp
+L power:GND #PWR02
+U 1 1 5E217EDB
+P 5300 9450
+F 0 "#PWR02" H 5300 9200 50  0001 C CNN
+F 1 "GND" H 5305 9277 50  0000 C CNN
+F 2 "" H 5300 9450 50  0001 C CNN
+F 3 "" H 5300 9450 50  0001 C CNN
+	1    5300 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 9400 5300 9450
+Text Label 5000 9400 2    50   ~ 0
+12V_Switch
+$Comp
+L Rocketry:SS110LW D2
+U 1 1 5E16DBBE
+P 5150 9400
+F 0 "D2" H 5150 9616 50  0000 C CNN
+F 1 "SS110LW" H 5150 9525 50  0000 C CNN
+F 2 "footprints:D_SOD-123W_OEM" H 5050 9400 50  0001 C CNN
+F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 5150 9500 50  0001 C CNN
+F 4 "DK" H 5350 9700 60  0001 C CNN "MFN"
+F 5 "SS110LWRVGCT-ND" H 5250 9600 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 5450 9800 60  0001 C CNN "PurchasingLink"
+	1    5150 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 10900 5300 10950
+$Comp
+L power:GND #PWR03
+U 1 1 5E241833
+P 5300 10950
+F 0 "#PWR03" H 5300 10700 50  0001 C CNN
+F 1 "GND" H 5305 10777 50  0000 C CNN
+F 2 "" H 5300 10950 50  0001 C CNN
+F 3 "" H 5300 10950 50  0001 C CNN
+	1    5300 10950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
