@@ -646,7 +646,7 @@ Wire Notes Line
 	2450 5500 950  5500
 Text Notes 950  6450 0    50   ~ 0
 Buck Power Stage\n
-Text Label 6600 5800 0    50   ~ 0
+Text Label 7350 6000 0    50   ~ 0
 VBat
 Text Label 2450 3200 0    50   ~ 0
 VBat
@@ -914,8 +914,6 @@ F 3 "~" H 6000 5700 50  0001 C CNN
 $EndComp
 Text Label 6000 5500 0    50   ~ 0
 Charge
-Wire Wire Line
-	6200 5800 6600 5800
 Text Notes 4900 800  0    50   ~ 10
 Thermal Monitoring\n
 Text Label 10000 2000 2    50   ~ 0
@@ -930,19 +928,7 @@ Text Label 10000 2400 2    50   ~ 0
 B5
 Text Label 10000 2500 2    50   ~ 0
 B6
-Text Label 5050 950  2    50   ~ 0
-B1
-Text Label 5050 1050 2    50   ~ 0
-B2
-Text Label 5050 1150 2    50   ~ 0
-B3
-Text Label 5050 1250 2    50   ~ 0
-B4
-Text Label 5050 1350 2    50   ~ 0
-B5
-Text Label 5050 1450 2    50   ~ 0
-B6
-Text Label 5600 950  2    50   ~ 0
+Text Label 4800 1600 0    50   ~ 0
 T1
 Text Label 5600 1050 2    50   ~ 0
 T2
@@ -969,4 +955,191 @@ F 3 "~" H 4125 1750 50  0001 C CNN
 	1    4700 1700
 	1    0    0    -1  
 $EndComp
+Text Label 5050 3200 2    50   ~ 0
+B1
+Text Label 5050 3350 2    50   ~ 0
+B2
+Text Label 5050 3500 2    50   ~ 0
+B3
+Text Label 6000 3200 2    50   ~ 0
+B4
+Text Label 6000 3350 2    50   ~ 0
+B5
+Text Label 6000 3500 2    50   ~ 0
+B6
+Wire Wire Line
+	4250 3050 4400 3050
+Wire Wire Line
+	6000 3050 6350 3050
+Wire Wire Line
+	4250 3900 4400 3900
+Wire Wire Line
+	5050 3050 5050 3900
+Connection ~ 5050 3900
+Wire Wire Line
+	5050 3900 6000 3900
+Wire Wire Line
+	6000 3050 6000 3900
+Connection ~ 6000 3900
+Wire Wire Line
+	6000 3900 6350 3900
+$Comp
+L power:+12V #PWR?
+U 1 1 5E179A7D
+P 4250 3050
+F 0 "#PWR?" H 4250 2900 50  0001 C CNN
+F 1 "+12V" H 4265 3223 50  0000 C CNN
+F 2 "" H 4250 3050 50  0001 C CNN
+F 3 "" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E179C4F
+P 4250 3900
+F 0 "#PWR?" H 4250 3650 50  0001 C CNN
+F 1 "GND" H 4255 3727 50  0000 C CNN
+F 2 "" H 4250 3900 50  0001 C CNN
+F 3 "" H 4250 3900 50  0001 C CNN
+	1    4250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5E179EB6
+P 10050 3600
+F 0 "J?" H 10077 3576 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10077 3485 50  0000 L CNN
+F 2 "" H 10050 3600 50  0001 C CNN
+F 3 "~" H 10050 3600 50  0001 C CNN
+	1    10050 3600
+	1    0    0    -1  
+$EndComp
+Text Label 9850 3600 2    50   ~ 0
+Load+
+Text Label 9850 3700 2    50   ~ 0
+Load-
+Text Label 7300 3250 0    50   ~ 0
+Load+
+Text Label 6900 3900 0    50   ~ 0
+Load-
+$Comp
+L Device:D_Shockley D?
+U 1 1 5E17A7E8
+P 5550 3050
+F 0 "D?" H 5550 2834 50  0000 C CNN
+F 1 "D_Shockley" H 5550 2925 50  0000 C CNN
+F 2 "" H 5550 3050 50  0001 C CNN
+F 3 "~" H 5550 3050 50  0001 C CNN
+	1    5550 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E17AAB6
+P 6900 3650
+F 0 "#PWR?" H 6900 3400 50  0001 C CNN
+F 1 "GND" H 6905 3477 50  0000 C CNN
+F 2 "" H 6900 3650 50  0001 C CNN
+F 3 "" H 6900 3650 50  0001 C CNN
+	1    6900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Management:TPS2592xx U?
+U 1 1 5E17AB1F
+P 6900 3350
+F 0 "U?" H 6900 3828 50  0000 C CNN
+F 1 "TPS2592xx" H 6900 3737 50  0000 C CNN
+F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 6850 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps25925.pdf" H 6500 3750 50  0001 C CNN
+	1    6900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3050 5400 3050
+Wire Wire Line
+	5700 3050 6000 3050
+Connection ~ 5050 3050
+Connection ~ 6000 3050
+$Comp
+L Power_Management:TPS2592xx U?
+U 1 1 5E17D9BC
+P 6950 6100
+F 0 "U?" H 6950 6578 50  0000 C CNN
+F 1 "TPS2592xx" H 6950 6487 50  0000 C CNN
+F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 6900 5450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps25925.pdf" H 6550 6500 50  0001 C CNN
+	1    6950 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5800 6950 5800
+$Comp
+L power:GND #PWR?
+U 1 1 5E1803FE
+P 6950 6400
+F 0 "#PWR?" H 6950 6150 50  0001 C CNN
+F 1 "GND" H 6955 6227 50  0000 C CNN
+F 2 "" H 6950 6400 50  0001 C CNN
+F 3 "" H 6950 6400 50  0001 C CNN
+	1    6950 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E18086C
+P 4400 3500
+F 0 "C?" H 4515 3546 50  0000 L CNN
+F 1 "C" H 4515 3455 50  0000 L CNN
+F 2 "" H 4438 3350 50  0001 C CNN
+F 3 "~" H 4400 3500 50  0001 C CNN
+	1    4400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E18097C
+P 6350 3450
+F 0 "C?" H 6465 3496 50  0000 L CNN
+F 1 "C" H 6465 3405 50  0000 L CNN
+F 2 "" H 6388 3300 50  0001 C CNN
+F 3 "~" H 6350 3450 50  0001 C CNN
+	1    6350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_PTC TH?
+U 1 1 5E180AA9
+P 4700 3050
+F 0 "TH?" V 4410 3050 50  0000 C CNN
+F 1 "Thermistor_PTC" V 4501 3050 50  0000 C CNN
+F 2 "" H 4750 2850 50  0001 L CNN
+F 3 "~" H 4700 3050 50  0001 C CNN
+	1    4700 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3050 6350 3300
+Wire Wire Line
+	6350 3600 6350 3900
+Connection ~ 6350 3050
+Wire Wire Line
+	6350 3050 6900 3050
+Connection ~ 6350 3900
+Wire Wire Line
+	6350 3900 6900 3900
+Wire Wire Line
+	4400 3050 4400 3350
+Wire Wire Line
+	4400 3650 4400 3900
+Connection ~ 4400 3050
+Wire Wire Line
+	4400 3050 4550 3050
+Connection ~ 4400 3900
+Wire Wire Line
+	4400 3900 5050 3900
+Wire Wire Line
+	4850 3050 5050 3050
 $EndSCHEMATC
