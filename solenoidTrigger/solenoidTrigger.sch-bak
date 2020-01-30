@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:solenoidTrigger-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -25,13 +24,13 @@ F 3 "" H 8450 7100 50  0001 C CNN
 	1    8450 7100
 	0    -1   -1   0   
 $EndComp
-Text Notes 900  8650 0    50   ~ 0
+Text Notes 1450 8800 0    50   ~ 0
 radio
-Text Label 1500 8950 0    50   ~ 0
+Text Label 1200 9000 2    50   ~ 0
 MISO
-Text Label 1500 8750 0    50   ~ 0
+Text Label 1200 8500 2    50   ~ 0
 5V
-Text Label 1500 9050 0    50   ~ 0
+Text Label 1200 9100 2    50   ~ 0
 MOSI
 $Comp
 L Rocketry:CONN_02X03 J8
@@ -51,7 +50,7 @@ Wire Wire Line
 	8450 7100 8600 7100
 Text Label 8600 7100 0    50   ~ 0
 5V
-Text Label 1500 8850 0    50   ~ 0
+Text Label 1200 8900 2    50   ~ 0
 SCK
 $Comp
 L power:GND #PWR0102
@@ -64,21 +63,8 @@ F 3 "" H 1950 10350 50  0001 C CNN
 	1    1950 10350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5DAF8AF9
-P 2850 10350
-F 0 "#PWR0103" H 2850 10100 50  0001 C CNN
-F 1 "GND" H 2855 10177 50  0000 C CNN
-F 2 "" H 2850 10350 50  0001 C CNN
-F 3 "" H 2850 10350 50  0001 C CNN
-	1    2850 10350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1850 10350 1950 10350
-Wire Wire Line
-	2750 10350 2850 10350
 Text Label 2350 9050 2    50   ~ 0
 MISO
 Text Label 2350 9150 2    50   ~ 0
@@ -89,11 +75,11 @@ Text Label 2850 9050 0    50   ~ 0
 VCC
 Text Label 2850 9150 0    50   ~ 0
 MOSI
-Text Label 1500 9150 0    50   ~ 0
+Text Label 1200 9200 2    50   ~ 0
 CS
-Text Label 1500 9250 0    50   ~ 0
+Text Label 1200 9300 2    50   ~ 0
 RESET
-Text Label 1500 9350 0    50   ~ 0
+Text Label 1200 8800 2    50   ~ 0
 G0(IRQ)
 $Comp
 L power:GND #PWR0104
@@ -110,21 +96,6 @@ Wire Wire Line
 	2100 10550 2100 10250
 Wire Wire Line
 	2100 10250 1850 10250
-$Comp
-L power:GND #PWR0105
-U 1 1 5DB53C14
-P 3000 10550
-F 0 "#PWR0105" H 3000 10300 50  0001 C CNN
-F 1 "GND" H 3005 10377 50  0000 C CNN
-F 2 "" H 3000 10550 50  0001 C CNN
-F 3 "" H 3000 10550 50  0001 C CNN
-	1    3000 10550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 10550 3000 10250
-Wire Wire Line
-	3000 10250 2750 10250
 $Comp
 L power:GND #PWR0106
 U 1 1 5DB729B1
@@ -386,77 +357,6 @@ Wire Wire Line
 	9150 7900 9600 7900
 Wire Wire Line
 	9100 8000 9600 8000
-$Comp
-L Rocketry:NMOS_CDS16 Q3
-U 1 1 5DC05DE9
-P 5000 10150
-F 0 "Q3" H 5000 10415 50  0000 C CNN
-F 1 "NMOS_CDS16" H 5000 10324 50  0000 C CNN
-F 2 "footprints:CSD16322Q5" H 4200 10350 50  0001 C CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 5100 10500 50  0001 C CNN
-F 4 "CSD16322Q5" H 5200 10650 50  0001 C CNN "MPN"
-F 5 "296-25112-1-ND" H 4550 10650 50  0001 C CNN "DPN"
-F 6 "https://www.digikey.com/product-detail/en/texas-instruments/CSD16322Q5/296-25112-1-ND/2138515" H 5400 10800 50  0001 C CNN "PurchasingLink"
-	1    5000 10150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 10150 4600 10250
-Wire Wire Line
-	4600 10250 4600 10350
-Connection ~ 4600 10250
-Wire Wire Line
-	5400 10150 5400 10250
-Connection ~ 5400 10250
-Wire Wire Line
-	5400 10250 5400 10350
-Wire Wire Line
-	5400 10350 5400 10450
-Connection ~ 5400 10350
-$Comp
-L power:GND #PWR0114
-U 1 1 5DAB088E
-P 4150 10750
-F 0 "#PWR0114" H 4150 10500 50  0001 C CNN
-F 1 "GND" H 4155 10577 50  0000 C CNN
-F 2 "" H 4150 10750 50  0001 C CNN
-F 3 "" H 4150 10750 50  0001 C CNN
-	1    4150 10750
-	1    0    0    -1  
-$EndComp
-Text Label 4600 10250 2    50   ~ 0
-12V_Solenoid3
-$Comp
-L Rocketry:R_1K R4
-U 1 1 5DC4DD1C
-P 4150 10600
-F 0 "R4" H 4220 10646 50  0000 L CNN
-F 1 "R_1K" H 4220 10555 50  0000 L CNN
-F 2 "footprints:R_0805_OEM" H 4080 10600 50  0001 C CNN
-F 3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" H 4230 10600 50  0001 C CNN
-F 4 "DK" H 4150 10600 60  0001 C CNN "MFN"
-F 5 "RNCP0805FTD1K00CT-ND" H 4150 10600 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/products/en?keywords=RNCP0805FTD1K00CT-ND" H 4630 11000 60  0001 C CNN "PurchasingLink"
-	1    4150 10600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 10450 4150 10450
-Text Notes 5250 10650 0    50   ~ 0
-transistor
-Wire Wire Line
-	1500 8650 1800 8650
-$Comp
-L power:GND #PWR0115
-U 1 1 5DBB9B5B
-P 1800 8650
-F 0 "#PWR0115" H 1800 8400 50  0001 C CNN
-F 1 "GND" H 1805 8477 50  0000 C CNN
-F 2 "" H 1800 8650 50  0001 C CNN
-F 3 "" H 1800 8650 50  0001 C CNN
-	1    1800 8650
-	1    0    0    -1  
-$EndComp
 Text Notes 10350 1150 0    98   ~ 0
 Check:\n   - Do the net labels work as intended, or do they not connect in the \n     correct order right now with how I have it set up?\n 
 $Comp
@@ -490,7 +390,7 @@ Wire Wire Line
 Text Label 9600 7400 2    50   ~ 0
 G0(IRQ)
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U2
+L solenoidTrigger-rescue:ATmega328P-AU-MCU_Microchip_ATmega U2
 U 1 1 5DA7142E
 P 10200 8500
 F 0 "U2" V 9550 6750 50  0000 C CNN
@@ -509,8 +409,6 @@ Wire Wire Line
 Wire Wire Line
 	9050 8800 9050 8750
 Connection ~ 9050 8800
-Text Label 4150 10450 2    50   ~ 0
-ctrl_pin_3-1
 Text Label 9600 9000 2    50   ~ 0
 PLED1
 Text Label 9600 9100 2    50   ~ 0
@@ -577,62 +475,6 @@ Wire Wire Line
 	4600 7450 4150 7450
 Text Notes 5250 7600 0    50   ~ 0
 transistor
-$Comp
-L Rocketry:NMOS_CDS16 Q6
-U 1 1 5DFB08D1
-P 7000 10200
-F 0 "Q6" H 7000 10465 50  0000 C CNN
-F 1 "NMOS_CDS16" H 7000 10374 50  0000 C CNN
-F 2 "footprints:CSD16322Q5" H 6200 10400 50  0001 C CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 7100 10550 50  0001 C CNN
-F 4 "CSD16322Q5" H 7200 10700 50  0001 C CNN "MPN"
-F 5 "296-25112-1-ND" H 6550 10700 50  0001 C CNN "DPN"
-F 6 "https://www.digikey.com/product-detail/en/texas-instruments/CSD16322Q5/296-25112-1-ND/2138515" H 7400 10850 50  0001 C CNN "PurchasingLink"
-	1    7000 10200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 10200 6600 10300
-Wire Wire Line
-	6600 10300 6600 10400
-Connection ~ 6600 10300
-Wire Wire Line
-	7400 10200 7400 10300
-Connection ~ 7400 10300
-Wire Wire Line
-	7400 10300 7400 10400
-Wire Wire Line
-	7400 10400 7400 10500
-Connection ~ 7400 10400
-$Comp
-L power:GND #PWR0120
-U 1 1 5DFB08DF
-P 6150 10800
-F 0 "#PWR0120" H 6150 10550 50  0001 C CNN
-F 1 "GND" H 6155 10627 50  0000 C CNN
-F 2 "" H 6150 10800 50  0001 C CNN
-F 3 "" H 6150 10800 50  0001 C CNN
-	1    6150 10800
-	1    0    0    -1  
-$EndComp
-Text Label 6600 10300 2    50   ~ 0
-12V_Solenoid3
-$Comp
-L Rocketry:R_1K R7
-U 1 1 5DFB08E9
-P 6150 10650
-F 0 "R7" H 6220 10696 50  0000 L CNN
-F 1 "R_1K" H 6220 10605 50  0000 L CNN
-F 2 "footprints:R_0805_OEM" H 6080 10650 50  0001 C CNN
-F 3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" H 6230 10650 50  0001 C CNN
-F 4 "DK" H 6150 10650 60  0001 C CNN "MFN"
-F 5 "RNCP0805FTD1K00CT-ND" H 6150 10650 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/products/en?keywords=RNCP0805FTD1K00CT-ND" H 6630 11050 60  0001 C CNN "PurchasingLink"
-	1    6150 10650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 10500 6150 10500
 Text Label 6150 9000 2    50   ~ 0
 ctrl_pin_2-2
 $Comp
@@ -693,10 +535,6 @@ Wire Wire Line
 	6600 9000 6150 9000
 Text Notes 7250 9150 0    50   ~ 0
 transistor
-Text Notes 7250 10700 0    50   ~ 0
-transistor
-Text Label 6150 10500 2    50   ~ 0
-ctrl_pin_3-2
 Text Label 6150 7450 2    50   ~ 0
 ctrl_pin_1-2
 $Comp
@@ -761,8 +599,6 @@ Text Label 950  10150 0    50   ~ 0
 12V_Solenoid1
 Text Label 1850 10150 0    50   ~ 0
 12V_Solenoid2
-Text Label 2750 10150 0    50   ~ 0
-12V_Solenoid3
 Text Notes 750  7450 0    50   ~ 0
 battery
 $Comp
@@ -2752,10 +2588,6 @@ Text Label 9600 8500 2    50   ~ 0
 ctrl_pin_2-2
 Wire Wire Line
 	9050 8800 9600 8800
-Text Label 9600 8600 2    50   ~ 0
-ctrl_pin_3-1
-Text Label 9600 8700 2    50   ~ 0
-ctrl_pin_3-2
 NoConn ~ 9600 9300
 NoConn ~ 9600 9400
 NoConn ~ 9600 9500
@@ -2764,7 +2596,7 @@ NoConn ~ 9600 9700
 NoConn ~ 9600 7300
 NoConn ~ 10800 7500
 NoConn ~ 10800 7600
-Text Notes 1000 2950 0    59   ~ 0
+Text Notes 1050 2950 0    59   ~ 0
 Check that no connects are correct\n\nChange library of:\n- fuse\n- switch
 Text Label 5400 7250 0    50   ~ 0
 12V_Switch
@@ -2773,10 +2605,6 @@ Text Label 7400 7250 0    50   ~ 0
 Text Label 5400 8800 0    50   ~ 0
 12V_Switch
 Text Label 7400 8800 0    50   ~ 0
-12V_Switch
-Text Label 5400 10250 0    50   ~ 0
-12V_Switch
-Text Label 7400 10300 0    50   ~ 0
 12V_Switch
 Wire Notes Line
 	3600 8250 7950 8250
@@ -2810,34 +2638,6 @@ F 4 "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTTC0301
 F 5 " OSTTC030162 " H 1750 10000 59  0001 C CNN "MPN"
 F 6 " ED2601-ND " H 1750 10000 59  0001 C CNN "DPN"
 	1    1750 10000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Rocketry:OSTTC03 P5
-U 1 1 5DE85F66
-P 2650 10000
-F 0 "P5" H 2633 10096 59  0000 C CNN
-F 1 "OSTTC03" H 2633 9991 59  0000 C CNN
-F 2 "footprints:OSTTC030162" H 2550 9850 59  0001 C CNN
-F 3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX0162.pdf" H 2550 9850 59  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTTC030162/ED2601-ND/614550" H 2650 10150 59  0001 C CNN "Purchasing Link"
-F 5 " OSTTC030162 " H 2650 10000 59  0001 C CNN "MPN"
-F 6 " ED2601-ND " H 2650 10000 59  0001 C CNN "DPN"
-	1    2650 10000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Rocketry:OSTTC08 P3
-U 1 1 5DE9C768
-P 1400 8450
-F 0 "P3" H 1383 8496 59  0000 C CNN
-F 1 "OSTTC08" H 1383 8391 59  0000 C CNN
-F 2 "footprints:OSTTC080162" H 1300 8250 59  0001 C CNN
-F 3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX0162.pdf" H 1300 8250 59  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTTC080162/ED2606-ND/614555" H 1400 8500 59  0001 C CNN "Purchasing Link"
-F 5 " OSTTC080162" H 1400 8500 59  0001 C CNN "MPN"
-F 6 "ED2606-ND" H 1400 8500 59  0001 C CNN "DPN"
-	1    1400 8450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2916,22 +2716,6 @@ F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/
 $EndComp
 Text Label 5000 7900 2    50   ~ 0
 12V_Switch
-$Comp
-L Rocketry:SS110LW D7
-U 1 1 5E18EAD4
-P 5150 10900
-F 0 "D7" H 5150 11116 50  0000 C CNN
-F 1 "SS110LW" H 5150 11025 50  0000 C CNN
-F 2 "footprints:D_SOD-123W_OEM" H 5050 10900 50  0001 C CNN
-F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 5150 11000 50  0001 C CNN
-F 4 "DK" H 5350 11200 60  0001 C CNN "MFN"
-F 5 "SS110LWRVGCT-ND" H 5250 11100 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 5450 11300 60  0001 C CNN "PurchasingLink"
-	1    5150 10900
-	1    0    0    -1  
-$EndComp
-Text Label 5000 10900 2    50   ~ 0
-12V_Switch
 Wire Notes Line
 	3600 5400 3600 11100
 Text Label 2150 7100 3    50   ~ 0
@@ -3005,17 +2789,33 @@ F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/
 	1    5150 9400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5300 10900 5300 10950
 $Comp
-L power:GND #PWR03
-U 1 1 5E241833
-P 5300 10950
-F 0 "#PWR03" H 5300 10700 50  0001 C CNN
-F 1 "GND" H 5305 10777 50  0000 C CNN
-F 2 "" H 5300 10950 50  0001 C CNN
-F 3 "" H 5300 10950 50  0001 C CNN
-	1    5300 10950
+L power:GND #PWR0115
+U 1 1 5DBB9B5B
+P 800 8650
+F 0 "#PWR0115" H 800 8400 50  0001 C CNN
+F 1 "GND" H 805 8477 50  0000 C CNN
+F 2 "" H 800 8650 50  0001 C CNN
+F 3 "" H 800 8650 50  0001 C CNN
+	1    800  8650
 	1    0    0    -1  
 $EndComp
+NoConn ~ 1200 8700
+Wire Wire Line
+	800  8600 800  8650
+Wire Wire Line
+	800  8600 1200 8600
+$Comp
+L Connector:Conn_01x09_Female J1
+U 1 1 5E31E4D8
+P 1400 8900
+F 0 "J1" H 1250 9550 50  0000 L CNN
+F 1 "Conn_01x09_Female" H 900 9450 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B9B-EH-A_1x09_P2.50mm_Vertical" H 1400 8900 50  0001 C CNN
+F 3 "~" H 1400 8900 50  0001 C CNN
+	1    1400 8900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9600 8700
+NoConn ~ 9600 8600
 $EndSCHEMATC
