@@ -2673,27 +2673,6 @@ F 7 "This is just a fuse reciprocal, the fuse it will hold is 0297010.WXNV (http
 	1    2450 7000
 	0    1    1    0   
 $EndComp
-Text Label 2850 8100 3    50   ~ 0
-12V_High
-$Comp
-L Rocketry:01530008Z F2
-U 1 1 5DF8F17C
-P 3150 8000
-F 0 "F2" V 2900 7700 50  0000 L CNN
-F 1 "01530008Z" V 3000 7550 50  0000 L CNN
-F 2 "footprints:01530008Z" H 3100 7800 50  0001 C CNN
-F 3 "https://www.littelfuse.com/~/media/commercial-vehicle/datasheets/automotive-fuse-holders/mini/littelfuse_fuse-holders-mini-153-pc-datasheet.pdf" H 3100 7800 50  0001 C CNN
-F 4 "01530008Z" H 3250 8000 50  0001 C CNN "MPN"
-F 5 "F065-ND" H 3250 8000 50  0001 C CNN "DPN"
-F 6 "https://www.digikey.com/product-detail/en/littelfuse-inc/01530008Z/F065-ND/183334" H 3250 8000 50  0001 C CNN "Purchasing Link"
-F 7 "This is just a fuse reciprocal, the fuse it will hold is 0297010.WXNV (https://www.digikey.com/product-detail/en/littelfuse-inc/0297010.WXNV/F991-ND/146591)" H 3250 8000 50  0001 C CNN "Notes"
-	1    3150 8000
-	0    1    1    0   
-$EndComp
-Text Label 2950 8100 3    50   ~ 0
-12V_Switch
-Text Notes 2750 7700 0    59   ~ 0
-switch\n
 Text Notes 1850 6700 0    59   ~ 0
 low-power fuse
 Text Notes 5100 5000 0    59   ~ 0
@@ -2723,7 +2702,7 @@ Source(12V)
 Text Label 1350 7400 0    50   ~ 0
 Source(12V)
 Text Label 2250 8100 3    50   ~ 0
-12V_High
+12V_Switch
 $Comp
 L Rocketry:01530008Z F3
 U 1 1 5E268060
@@ -2819,10 +2798,10 @@ $EndComp
 NoConn ~ 9600 8700
 NoConn ~ 9600 8600
 $Comp
-L Rocketry:LED_0805 D?
+L Rocketry:LED_0805 D7
 U 1 1 5E369B3B
 P 11850 8150
-F 0 "D?" V 11889 8033 50  0000 R CNN
+F 0 "D7" V 11889 8033 50  0000 R CNN
 F 1 "LED_0805" V 11798 8033 50  0000 R CNN
 F 2 "footprints:LED_0805_OEM" H 11750 8150 50  0001 C CNN
 F 3 "http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf" H 11850 8250 50  0001 C CNN
@@ -2835,10 +2814,10 @@ $EndComp
 Wire Wire Line
 	11850 8300 11850 8500
 $Comp
-L Rocketry:R_499 R?
+L Rocketry:R_499 R3
 U 1 1 5E369B45
 P 11850 7850
-F 0 "R?" V 12057 7850 50  0000 C CNN
+F 0 "R3" V 12057 7850 50  0000 C CNN
 F 1 "R_499" V 11966 7850 50  0000 C CNN
 F 2 "footprints:R_0805_OEM" H 11780 7850 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 11930 7850 50  0001 C CNN
@@ -2849,10 +2828,10 @@ F 6 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/E
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5E369B4B
 P 11850 8500
-F 0 "#PWR?" H 11850 8250 50  0001 C CNN
+F 0 "#PWR0103" H 11850 8250 50  0001 C CNN
 F 1 "GND" H 11855 8327 50  0000 C CNN
 F 2 "" H 11850 8500 50  0001 C CNN
 F 3 "" H 11850 8500 50  0001 C CNN
