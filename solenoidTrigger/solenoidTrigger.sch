@@ -2962,7 +2962,7 @@ $EndComp
 Wire Wire Line
 	5350 10850 5350 10900
 Text Label 5050 10850 2    50   ~ 0
-12V_Solenoid2
+12V_Solenoid3
 $Comp
 L Rocketry:SS110LW fly-sol3
 U 1 1 5E3D3948
