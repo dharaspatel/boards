@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 9)
     (tracks 429)
     (zones 0)
     (modules 51)
@@ -2627,6 +2627,9 @@
     )
   )
 
+  (gr_text "Rohil Agarwal\n2/7/20\nVersion 1" (at 111.4552 71.7804 270) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_line (start 191.77 132.08) (end 191.77 55.88) (layer Edge.Cuts) (width 0.2))
   (gr_arc (start 185.420001 55.88) (end 191.770001 55.88) (angle -90) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 109.220001 49.530001) (end 185.420001 49.530001) (layer Edge.Cuts) (width 0.2))
@@ -3032,13 +3035,10 @@
   (segment (start 114.9985 122.1867) (end 114.996 122.1892) (width 0.635) (layer F.Cu) (net 23))
   (segment (start 114.996 126.894) (end 119.293 131.191) (width 0.635) (layer F.Cu) (net 23))
   (segment (start 114.996 123.952) (end 114.996 126.894) (width 0.635) (layer F.Cu) (net 23))
-  (segment (start 121.3485 116.235) (end 121.3485 118.28) (width 0.254) (layer F.Cu) (net 47) (tstamp 5E3460D3))
-  (segment (start 121.3485 115.631) (end 121.3485 116.235) (width 0.254) (layer F.Cu) (net 47) (tstamp 5E3460CD))
   (segment (start 177.038 94.676) (end 177.038 99.103) (width 0.254) (layer F.Cu) (net 33) (tstamp 5E34555D))
   (segment (start 179.959 99.103998) (end 179.975501 99.120499) (width 0.254) (layer F.Cu) (net 34) (tstamp 5E34555A))
   (segment (start 179.959 94.676) (end 179.959 99.103998) (width 0.254) (layer F.Cu) (net 34) (tstamp 5E345557))
   (segment (start 182.88 94.676) (end 182.88 99.103) (width 0.254) (layer F.Cu) (net 35) (tstamp 5E345554))
-  (segment (start 113.096 123.952) (end 110.6375 123.952) (width 0.254) (layer F.Cu) (net 46) (tstamp 5E346D35))
   (segment (start 151.13 97.96) (end 151.13 95.565) (width 0.254) (layer F.Cu) (net 36) (tstamp 5E345560))
   (segment (start 175.768 123.3805) (end 173.416 123.3805) (width 0.635) (layer F.Cu) (net 42) (tstamp 5E38BCF2))
   (segment (start 173.416 123.3805) (end 173.416 123.378) (width 0.508) (layer F.Cu) (net 42))
@@ -3065,6 +3065,9 @@
   (segment (start 177.419 119.0117) (end 176.8602 119.5705) (width 0.635) (layer F.Cu) (net 44))
   (segment (start 176.8602 113.157) (end 175.768 113.157) (width 0.635) (layer F.Cu) (net 44))
   (segment (start 177.419 113.7158) (end 176.8602 113.157) (width 0.635) (layer F.Cu) (net 44))
+  (segment (start 113.096 123.952) (end 110.6375 123.952) (width 0.254) (layer F.Cu) (net 46) (tstamp 5E346D35))
+  (segment (start 121.3485 116.235) (end 121.3485 118.28) (width 0.254) (layer F.Cu) (net 47) (tstamp 5E3460D3))
+  (segment (start 121.3485 115.631) (end 121.3485 116.235) (width 0.254) (layer F.Cu) (net 47) (tstamp 5E3460CD))
 
   (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5E155AC2) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
