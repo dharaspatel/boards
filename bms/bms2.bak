@@ -17,23 +17,12 @@ $EndDescr
 Text Notes 7100 5200 0    50   ~ 10
 CC Discharging
 $Comp
-L Device:Opamp_Dual_Generic U3
-U 1 1 5E125949
-P 8050 5600
-F 0 "U3" H 8050 5967 50  0000 C CNN
-F 1 "Opamp_Dual_Generic" H 8050 5876 50  0000 C CNN
-F 2 "" H 8050 5600 50  0001 C CNN
-F 3 "~" H 8050 5600 50  0001 C CNN
-	1    8050 5600
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:LED D7
 U 1 1 5E125A98
 P 6850 4600
 F 0 "D7" V 6888 4483 50  0000 R CNN
 F 1 "LED" V 6797 4483 50  0000 R CNN
-F 2 "" H 6850 4600 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 4600 50  0001 C CNN
 F 3 "~" H 6850 4600 50  0001 C CNN
 	1    6850 4600
 	0    1    -1   0   
@@ -94,17 +83,6 @@ Wire Wire Line
 Connection ~ 8350 5900
 Wire Wire Line
 	8350 5900 8350 6050
-$Comp
-L Device:Q_NMOS_SGD Q10
-U 1 1 5E14BFEE
-P 6950 5600
-F 0 "Q10" H 7155 5646 50  0000 L CNN
-F 1 "Q_NMOS_SGD" H 7155 5555 50  0000 L CNN
-F 2 "" H 7150 5700 50  0001 C CNN
-F 3 "~" H 6950 5600 50  0001 C CNN
-	1    6950 5600
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8050 6050 6850 6050
 Wire Wire Line
@@ -146,17 +124,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1980 4850 50  0
 F 3 "~" H 2050 4850 50  0001 C CNN
 	1    2050 4850
 	0    -1   1    0   
-$EndComp
-$Comp
-L Device:Q_NMOS_DGS Q1
-U 1 1 5E14DEA9
-P 1450 4650
-F 0 "Q1" H 1400 4450 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 1000 4350 50  0000 L CNN
-F 2 "" H 1650 4750 50  0001 C CNN
-F 3 "~" H 1450 4650 50  0001 C CNN
-	1    1450 4650
-	1    0    0    1   
 $EndComp
 Wire Wire Line
 	1900 4450 1850 4450
@@ -205,17 +172,6 @@ F 3 "~" H 2050 5700 50  0001 C CNN
 	1    2050 5700
 	0    -1   1    0   
 $EndComp
-$Comp
-L Device:Q_NMOS_DGS Q3
-U 1 1 5E150E04
-P 1450 5500
-F 0 "Q3" H 1300 5400 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 1000 5300 50  0000 L CNN
-F 2 "" H 1650 5600 50  0001 C CNN
-F 3 "~" H 1450 5500 50  0001 C CNN
-	1    1450 5500
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	1900 5300 1850 5300
 Wire Wire Line
@@ -241,25 +197,12 @@ F 3 "~" H 1850 5050 50  0001 C CNN
 	1    1850 5050
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Q_NMOS_DGS Q2
-U 1 1 5E151C11
-P 1450 5050
-F 0 "Q2" H 1300 4950 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 1000 4850 50  0000 L CNN
-F 2 "" H 1650 5150 50  0001 C CNN
-F 3 "~" H 1450 5050 50  0001 C CNN
-	1    1450 5050
-	1    0    0    1   
-$EndComp
-Connection ~ 1550 4850
 Wire Wire Line
 	1850 4850 1850 4900
 Wire Wire Line
 	1850 5200 1850 5300
 Wire Wire Line
 	1550 5250 1550 5300
-Connection ~ 1550 5300
 $Comp
 L formula:CONN_02X03 J3
 U 1 1 5E15A020
@@ -439,17 +382,6 @@ F 3 "~" H 4400 4850 50  0001 C CNN
 	1    4400 4850
 	0    -1   1    0   
 $EndComp
-$Comp
-L Device:Q_NMOS_DGS Q5
-U 1 1 5E177D0A
-P 3800 4650
-F 0 "Q5" H 3750 4450 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 3350 4350 50  0000 L CNN
-F 2 "" H 4000 4750 50  0001 C CNN
-F 3 "~" H 3800 4650 50  0001 C CNN
-	1    3800 4650
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	4250 4450 4200 4450
 Wire Wire Line
@@ -497,17 +429,6 @@ F 3 "~" H 4400 5700 50  0001 C CNN
 	1    4400 5700
 	0    -1   1    0   
 $EndComp
-$Comp
-L Device:Q_NMOS_DGS Q7
-U 1 1 5E177D2E
-P 3800 5500
-F 0 "Q7" H 3650 5400 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 3350 5300 50  0000 L CNN
-F 2 "" H 4000 5600 50  0001 C CNN
-F 3 "~" H 3800 5500 50  0001 C CNN
-	1    3800 5500
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	4250 5300 4200 5300
 Wire Wire Line
@@ -533,25 +454,12 @@ F 3 "~" H 4200 5050 50  0001 C CNN
 	1    4200 5050
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Q_NMOS_DGS Q6
-U 1 1 5E177D44
-P 3800 5050
-F 0 "Q6" H 3650 4950 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 3350 4850 50  0000 L CNN
-F 2 "" H 4000 5150 50  0001 C CNN
-F 3 "~" H 3800 5050 50  0001 C CNN
-	1    3800 5050
-	1    0    0    1   
-$EndComp
-Connection ~ 3900 4850
 Wire Wire Line
 	4200 4850 4200 4900
 Wire Wire Line
 	4200 5200 4200 5300
 Wire Wire Line
 	3900 5250 3900 5300
-Connection ~ 3900 5300
 Text Label 1250 4650 2    50   ~ 0
 FET1
 Text Label 1250 5050 2    50   ~ 0
@@ -564,17 +472,6 @@ Text Label 3600 5050 2    50   ~ 0
 FET5
 Text Label 3600 5500 2    50   ~ 0
 FET6
-$Comp
-L Device:Q_NMOS_DGS Q9
-U 1 1 5E17FE3C
-P 6750 4250
-F 0 "Q9" H 6600 4150 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 6300 4050 50  0000 L CNN
-F 2 "" H 6950 4350 50  0001 C CNN
-F 3 "~" H 6750 4250 50  0001 C CNN
-	1    6750 4250
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	6850 3950 6850 4050
 Text Label 6550 4250 2    50   ~ 0
@@ -630,7 +527,7 @@ U 1 1 5E17A7E8
 P 1600 3950
 F 0 "D1" H 1600 3734 50  0000 C CNN
 F 1 "D_Shockley" H 1600 3825 50  0000 C CNN
-F 2 "" H 1600 3950 50  0001 C CNN
+F 2 "footprints:SD103AW-13-F" H 1600 3950 50  0001 C CNN
 F 3 "~" H 1600 3950 50  0001 C CNN
 	1    1600 3950
 	-1   0    0    1   
@@ -689,7 +586,7 @@ U 1 1 5E38EE6E
 P 10150 2450
 F 0 "U4" H 10150 956 60  0000 C CNN
 F 1 "ATSAMD21G18A-AUT" H 10150 850 60  0000 C CNN
-F 2 "digikey-footprints:TQFP-48_7x7mm" H 10350 2650 60  0001 L CNN
+F 2 "footprints:TO-263-2-Heatsink" H 10350 2650 60  0001 L CNN
 F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en605782" H 10350 2750 60  0001 L CNN
 F 4 "ATSAMD21G18A-AUTCT-ND" H 10350 2850 60  0001 L CNN "Digi-Key_PN"
 F 5 "ATSAMD21G18A-AUT" H 10350 2950 60  0001 L CNN "MPN"
@@ -740,7 +637,7 @@ U 1 1 5E3DC0C2
 P 3050 3950
 F 0 "D2" H 3050 3734 50  0000 C CNN
 F 1 "D_Shockley" H 3050 3825 50  0000 C CNN
-F 2 "" H 3050 3950 50  0001 C CNN
+F 2 "footprints:SD103AW-13-F" H 3050 3950 50  0001 C CNN
 F 3 "~" H 3050 3950 50  0001 C CNN
 	1    3050 3950
 	-1   0    0    1   
@@ -808,28 +705,6 @@ Wire Wire Line
 Wire Wire Line
 	4200 1450 4200 2800
 $Comp
-L pspice:MNMOS M1
-U 1 1 5E492D28
-P 3250 2550
-F 0 "M1" V 3400 2600 50  0000 C CNN
-F 1 "10" V 3500 2600 50  0000 C CNN
-F 2 "" H 3225 2550 50  0001 C CNN
-F 3 "~" H 3225 2550 50  0001 C CNN
-	1    3250 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:MNMOS M2
-U 1 1 5E4AD11B
-P 4550 1800
-F 0 "M2" H 4838 1846 50  0000 L CNN
-F 1 "0.1" H 4838 1755 50  0000 L CNN
-F 2 "" H 4525 1800 50  0001 C CNN
-F 3 "~" H 4525 1800 50  0001 C CNN
-	1    4550 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C8
 U 1 1 5E4D3B21
 P 3100 1100
@@ -849,17 +724,13 @@ Wire Wire Line
 	2950 1450 4200 1450
 Wire Wire Line
 	2950 2250 4350 2250
-Wire Wire Line
-	2950 2350 3350 2350
-Wire Wire Line
-	2250 3200 4200 3200
 $Comp
 L Device:D_Schottky D3
 U 1 1 5E51784A
 P 3650 2550
 F 0 "D3" V 3604 2629 50  0000 L CNN
 F 1 "S" V 3695 2629 50  0000 L CNN
-F 2 "" H 3650 2550 50  0001 C CNN
+F 2 "footprints:SD103AW-13-F" H 3650 2550 50  0001 C CNN
 F 3 "~" H 3650 2550 50  0001 C CNN
 	1    3650 2550
 	0    1    1    0   
@@ -881,7 +752,7 @@ U 1 1 5E5261CE
 P 5300 1700
 F 0 "D6" V 5254 1779 50  0000 L CNN
 F 1 "S" V 5345 1779 50  0000 L CNN
-F 2 "" H 5300 1700 50  0001 C CNN
+F 2 "footprints:SD103AW-13-F" H 5300 1700 50  0001 C CNN
 F 3 "~" H 5300 1700 50  0001 C CNN
 	1    5300 1700
 	0    1    1    0   
@@ -900,8 +771,6 @@ $EndComp
 Connection ~ 5300 1550
 Wire Wire Line
 	4200 1450 4900 1450
-Wire Wire Line
-	2950 1550 5300 1550
 Wire Wire Line
 	4900 1450 4900 1250
 Wire Wire Line
@@ -928,8 +797,6 @@ Wire Wire Line
 Wire Wire Line
 	3100 1250 3100 2750
 Connection ~ 3100 2750
-Wire Wire Line
-	3100 2750 3350 2750
 Wire Wire Line
 	3250 1750 3550 1750
 Wire Wire Line
@@ -1126,17 +993,6 @@ F 3 "" H 1200 2600 50  0001 C CNN
 	1    1200 2600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D D4
-U 1 1 5E5B4188
-P 3700 1950
-F 0 "D4" H 3700 1734 50  0000 C CNN
-F 1 "FR" H 3700 1825 50  0000 C CNN
-F 2 "" H 3700 1950 50  0001 C CNN
-F 3 "~" H 3700 1950 50  0001 C CNN
-	1    3700 1950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2950 1950 3150 1950
 $Comp
@@ -1190,7 +1046,7 @@ U 1 1 5E5D3E09
 P 5250 950
 F 0 "D5" H 5250 1166 50  0000 C CNN
 F 1 "S" H 5250 1075 50  0000 C CNN
-F 2 "" H 5250 950 50  0001 C CNN
+F 2 "footprints:SD103AW-13-F" H 5250 950 50  0001 C CNN
 F 3 "~" H 5250 950 50  0001 C CNN
 	1    5250 950 
 	1    0    0    -1  
@@ -1203,26 +1059,17 @@ U 1 1 5E4CB5D0
 P 4050 850
 F 0 "TH4" V 4292 850 50  0000 C CNN
 F 1 "Thermistor" V 4201 850 50  0000 C CNN
-F 2 "" H 4050 850 50  0001 C CNN
+F 2 "footprints:Thermistor" H 4050 850 50  0001 C CNN
 F 3 "~" H 4050 850 50  0001 C CNN
 	1    4050 850 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4250 850  4350 850 
-Connection ~ 3350 2350
 Wire Wire Line
 	2950 2450 2950 2550
 Wire Wire Line
 	2950 2550 3050 2550
-Wire Wire Line
-	3350 2750 3450 2750
-Wire Wire Line
-	3350 2350 3550 2350
-Connection ~ 3350 2750
-Connection ~ 3450 2750
-Wire Wire Line
-	3450 2750 3650 2750
 Wire Wire Line
 	3650 2350 3650 2400
 Wire Wire Line
@@ -1258,9 +1105,6 @@ Wire Wire Line
 	4650 2000 4650 2050
 Wire Wire Line
 	4350 2250 4350 1800
-Wire Wire Line
-	4750 2000 4650 2000
-Connection ~ 4650 2000
 Wire Wire Line
 	3900 2350 4750 2350
 Wire Wire Line
@@ -1368,7 +1212,7 @@ U 1 1 5E64F7E5
 P 2450 4950
 F 0 "TH1" H 2555 4996 50  0000 L CNN
 F 1 "Thermistor" H 2555 4905 50  0000 L CNN
-F 2 "" H 2450 4950 50  0001 C CNN
+F 2 "footprints:Thermistor" H 2450 4950 50  0001 C CNN
 F 3 "~" H 2450 4950 50  0001 C CNN
 	1    2450 4950
 	1    0    0    -1  
@@ -1397,7 +1241,7 @@ U 1 1 5E68B75F
 P 2800 5350
 F 0 "TH2" H 2905 5396 50  0000 L CNN
 F 1 "Thermistor" H 2905 5305 50  0000 L CNN
-F 2 "" H 2800 5350 50  0001 C CNN
+F 2 "footprints:Thermistor" H 2800 5350 50  0001 C CNN
 F 3 "~" H 2800 5350 50  0001 C CNN
 	1    2800 5350
 	1    0    0    -1  
@@ -1424,7 +1268,7 @@ U 1 1 5E698429
 P 3150 5800
 F 0 "TH3" H 3255 5846 50  0000 L CNN
 F 1 "Thermistor" H 3255 5755 50  0000 L CNN
-F 2 "" H 3150 5800 50  0001 C CNN
+F 2 "footprints:Thermistor" H 3150 5800 50  0001 C CNN
 F 3 "~" H 3150 5800 50  0001 C CNN
 	1    3150 5800
 	1    0    0    -1  
@@ -1474,7 +1318,7 @@ U 1 1 5E6F0DF5
 P 4800 4950
 F 0 "TH5" H 4905 4996 50  0000 L CNN
 F 1 "Thermistor" H 4905 4905 50  0000 L CNN
-F 2 "" H 4800 4950 50  0001 C CNN
+F 2 "footprints:Thermistor" H 4800 4950 50  0001 C CNN
 F 3 "~" H 4800 4950 50  0001 C CNN
 	1    4800 4950
 	1    0    0    -1  
@@ -1503,7 +1347,7 @@ U 1 1 5E6F0E07
 P 5150 5350
 F 0 "TH6" H 5255 5396 50  0000 L CNN
 F 1 "Thermistor" H 5255 5305 50  0000 L CNN
-F 2 "" H 5150 5350 50  0001 C CNN
+F 2 "footprints:Thermistor" H 5150 5350 50  0001 C CNN
 F 3 "~" H 5150 5350 50  0001 C CNN
 	1    5150 5350
 	1    0    0    -1  
@@ -1530,7 +1374,7 @@ U 1 1 5E6F0E18
 P 5500 5800
 F 0 "TH7" H 5605 5846 50  0000 L CNN
 F 1 "Thermistor" H 5605 5755 50  0000 L CNN
-F 2 "" H 5500 5800 50  0001 C CNN
+F 2 "footprints:Thermistor" H 5500 5800 50  0001 C CNN
 F 3 "~" H 5500 5800 50  0001 C CNN
 	1    5500 5800
 	1    0    0    -1  
@@ -1682,28 +1526,6 @@ Wire Wire Line
 Connection ~ 7500 3950
 Wire Wire Line
 	7500 3950 8050 3950
-$Comp
-L Device:Q_NMOS_DGS Q8
-U 1 1 5E567250
-P 4450 6300
-F 0 "Q8" H 4300 6200 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 4000 6100 50  0000 L CNN
-F 2 "" H 4650 6400 50  0001 C CNN
-F 3 "~" H 4450 6300 50  0001 C CNN
-	1    4450 6300
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:Q_NMOS_DGS Q4
-U 1 1 5E567636
-P 2100 6300
-F 0 "Q4" H 1950 6200 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 1650 6100 50  0000 L CNN
-F 2 "" H 2300 6400 50  0001 C CNN
-F 3 "~" H 2100 6300 50  0001 C CNN
-	1    2100 6300
-	1    0    0    1   
-$EndComp
 Text Label 1900 6300 2    50   ~ 0
 SafetySwitch
 Text Label 4250 6300 2    50   ~ 0
@@ -1761,4 +1583,176 @@ F 3 "" H 10650 850 50  0001 C CNN
 $EndComp
 Text Label 9650 3600 2    50   ~ 0
 RESET
+$Comp
+L Diode:UF5400 D4
+U 1 1 5E5FB181
+P 3700 1950
+F 0 "D4" H 3700 1734 50  0000 C CNN
+F 1 "UF5400" H 3700 1825 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3700 1775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88756/uf5400.pdf" H 3700 1950 50  0001 C CNN
+	1    3700 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 1550 5300 1550
+$Comp
+L Transistor_FET:BS170 Q11
+U 1 1 5E6106A0
+P 3250 2550
+F 0 "Q11" H 3455 2596 50  0000 L CNN
+F 1 "BS170" H 3455 2505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3450 2475 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 3250 2550 50  0001 L CNN
+	1    3250 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2350 3350 2350
+Wire Wire Line
+	3100 2750 3350 2750
+Connection ~ 3350 2350
+Wire Wire Line
+	3350 2350 3550 2350
+Connection ~ 3350 2750
+Wire Wire Line
+	3350 2750 3650 2750
+Wire Wire Line
+	2250 3200 4200 3200
+$Comp
+L Transistor_FET:BSB014N04LX3 Q12
+U 1 1 5E6117E5
+P 4550 1800
+F 0 "Q12" H 4755 1846 50  0000 L CNN
+F 1 "BSB014N04LX3" H 4755 1755 50  0000 L CNN
+F 2 "Package_DirectFET:DirectFET_MX" H 4550 1800 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSB014N04LX3G-DS-v02_03-en.pdf?fileId=db3a304320d39d590121a02c6c737a9b" H 4550 1800 50  0001 L CNN
+	1    4550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BS170 Q1
+U 1 1 5E626220
+P 1450 4650
+F 0 "Q1" H 1655 4696 50  0000 L CNN
+F 1 "BS170" H 1655 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1650 4575 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 1450 4650 50  0001 L CNN
+	1    1450 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BS170 Q2
+U 1 1 5E626576
+P 1450 5050
+F 0 "Q2" H 1655 5096 50  0000 L CNN
+F 1 "BS170" H 1655 5005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1650 4975 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 1450 5050 50  0001 L CNN
+	1    1450 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 4850
+$Comp
+L Transistor_FET:BS170 Q3
+U 1 1 5E626689
+P 1450 5500
+F 0 "Q3" H 1655 5546 50  0000 L CNN
+F 1 "BS170" H 1655 5455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1650 5425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 1450 5500 50  0001 L CNN
+	1    1450 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 5300
+$Comp
+L Transistor_FET:BS170 Q5
+U 1 1 5E6267AC
+P 3800 4650
+F 0 "Q5" H 4005 4696 50  0000 L CNN
+F 1 "BS170" H 4005 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4000 4575 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 3800 4650 50  0001 L CNN
+	1    3800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BS170 Q7
+U 1 1 5E6268A0
+P 3800 5500
+F 0 "Q7" H 4005 5546 50  0000 L CNN
+F 1 "BS170" H 4005 5455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4000 5425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 3800 5500 50  0001 L CNN
+	1    3800 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BS170 Q6
+U 1 1 5E6269EE
+P 3800 5050
+F 0 "Q6" H 4005 5096 50  0000 L CNN
+F 1 "BS170" H 4005 5005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4000 4975 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 3800 5050 50  0001 L CNN
+	1    3800 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 4850
+Connection ~ 3900 5300
+$Comp
+L Transistor_FET:BS170 Q8
+U 1 1 5E6271A9
+P 4450 6300
+F 0 "Q8" H 4655 6346 50  0000 L CNN
+F 1 "BS170" H 4655 6255 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 6225 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 4450 6300 50  0001 L CNN
+	1    4450 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BS170 Q4
+U 1 1 5E627279
+P 2100 6300
+F 0 "Q4" H 2305 6346 50  0000 L CNN
+F 1 "BS170" H 2305 6255 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2300 6225 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 2100 6300 50  0001 L CNN
+	1    2100 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BS170 Q9
+U 1 1 5E627375
+P 6750 4250
+F 0 "Q9" H 6955 4296 50  0000 L CNN
+F 1 "BS170" H 6955 4205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6950 4175 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 6750 4250 50  0001 L CNN
+	1    6750 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BS170 Q10
+U 1 1 5E6275EA
+P 6950 5600
+F 0 "Q10" H 7156 5554 50  0000 L CNN
+F 1 "BS170" H 7156 5645 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7150 5525 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 6950 5600 50  0001 L CNN
+	1    6950 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LMC6482 U3
+U 1 1 5E64F3C4
+P 8050 5600
+F 0 "U3" H 8050 5233 50  0000 C CNN
+F 1 "LMC6482" H 8050 5324 50  0000 C CNN
+F 2 "footprints:SOIC127P600X175-8N" H 8050 5600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 8050 5600 50  0001 C CNN
+	1    8050 5600
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
