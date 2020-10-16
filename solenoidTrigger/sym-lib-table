@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name solenoidTrigger-rescue)(type Legacy)(uri ${KIPRJMOD}/solenoidTrigger-rescue.lib)(options "")(descr ""))
-)
