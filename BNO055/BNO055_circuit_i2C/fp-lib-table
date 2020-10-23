@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name BNO055)(type KiCad)(uri C:/Users/ieykamp/Documents/KiCAD/BNO055_orientation/BNO055.pretty)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri C:/Users/ieykamp/Documents/KiCAD/Olin_Rocketry_preferred_parts/preferred_parts/footprints.pretty)(options "")(descr ""))
+)
