@@ -139,19 +139,6 @@ F 3 "" H 3000 1150 50  0001 C CNN
 	1    3000 1150
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VDDF #PWR0103
-U 1 1 5F89F746
-P 1900 1150
-F 0 "#PWR0103" H 1900 1000 50  0001 C CNN
-F 1 "VDDF" H 1915 1323 50  0000 C CNN
-F 2 "" H 1900 1150 50  0001 C CNN
-F 3 "" H 1900 1150 50  0001 C CNN
-	1    1900 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 3500 3650 4250
 Wire Wire Line
 	1900 1750 1900 1550
 Wire Wire Line
@@ -232,9 +219,7 @@ Wire Wire Line
 	2350 4000 950  4000
 Text Label 1100 4000 0    50   ~ 0
 nBOOT_LOAD_PIN
-Text GLabel 10350 4600 2    50   Input ~ 0
-OptionalOSCinput
-Text GLabel 10350 4700 2    50   Input ~ 0
+Text GLabel 10250 2150 2    50   Input ~ 0
 OptionalOSCoutput
 Connection ~ 7000 2500
 Wire Wire Line
@@ -250,9 +235,6 @@ Wire Wire Line
 	5750 2100 5750 2250
 Wire Wire Line
 	5750 2100 9100 2100
-Connection ~ 3650 4250
-Wire Wire Line
-	3650 4250 3650 5750
 Wire Wire Line
 	3650 3050 3650 3500
 Connection ~ 3650 3500
@@ -282,8 +264,6 @@ Wire Wire Line
 	5500 4850 5500 5150
 Wire Wire Line
 	4750 4850 4750 5750
-Wire Wire Line
-	4250 4250 3650 4250
 Wire Wire Line
 	4250 4000 2350 4000
 Wire Wire Line
@@ -445,4 +425,91 @@ F 3 "" H 10100 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 10350 4500
+$Comp
+L Oscillator:ASDMB-xxxMHz U2
+U 1 1 5FA4E8B7
+P 9900 1550
+F 0 "U2" H 10300 1850 50  0000 L CNN
+F 1 "ASDMB-xxxMHz" H 10250 1950 50  0000 L CNN
+F 2 "ASDK2-32.768KHZ-LR-T3:ASDK2-32.768KHZ-LR-T3" H 9900 1550 50  0001 C CNN
+F 3 "https://abracon.com/Oscillators/ASDK.pdf" H 10200 2000 50  0001 C CNN
+	1    9900 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 10300 1550 2    50   Input ~ 0
+OptionalOSCinput
+Wire Wire Line
+	10000 1250 10000 1100
+Wire Wire Line
+	10000 1100 9700 1100
+Wire Wire Line
+	9300 1100 9300 1550
+Wire Wire Line
+	9300 1550 9500 1550
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5FA58E82
+P 1900 1150
+F 0 "#PWR01" H 1900 1000 50  0001 C CNN
+F 1 "+3.3V" H 1915 1323 50  0000 C CNN
+F 2 "" H 1900 1150 50  0001 C CNN
+F 3 "" H 1900 1150 50  0001 C CNN
+	1    1900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5FA5A832
+P 9700 1000
+F 0 "#PWR02" H 9700 850 50  0001 C CNN
+F 1 "+3.3V" H 9715 1173 50  0000 C CNN
+F 2 "" H 9700 1000 50  0001 C CNN
+F 3 "" H 9700 1000 50  0001 C CNN
+	1    9700 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1000 9700 1100
+Connection ~ 9700 1100
+Wire Wire Line
+	9700 1100 9300 1100
+$Comp
+L power:GND #PWR03
+U 1 1 5FA5D601
+P 9750 2000
+F 0 "#PWR03" H 9750 1750 50  0001 C CNN
+F 1 "GND" H 9755 1827 50  0000 C CNN
+F 2 "" H 9750 2000 50  0001 C CNN
+F 3 "" H 9750 2000 50  0001 C CNN
+	1    9750 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1850 9750 1850
+Wire Wire Line
+	9750 1850 9750 2000
+$Comp
+L Device:C C5
+U 1 1 5FA6257B
+P 9450 1850
+F 0 "C5" V 9600 1850 50  0000 C CNN
+F 1 "0.01u" V 9300 1850 50  0000 C CNN
+F 2 "footprints:C_0603_1608Metric" H 9488 1700 50  0001 C CNN
+F 3 "~" H 9450 1850 50  0001 C CNN
+	1    9450 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9600 1850 9750 1850
+Connection ~ 9750 1850
+Wire Wire Line
+	9300 1850 9300 1550
+Connection ~ 9300 1550
+Wire Wire Line
+	3650 3500 3650 4250
+Wire Wire Line
+	4250 4250 3650 4250
+Connection ~ 3650 4250
+Wire Wire Line
+	3650 4250 3650 5750
 $EndSCHEMATC
