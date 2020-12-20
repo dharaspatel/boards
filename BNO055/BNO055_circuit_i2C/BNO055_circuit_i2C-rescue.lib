@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Header_2x3-Olin_Rocketry_Symbols
+#
+DEF Header_2x3-Olin_Rocketry_Symbols H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Header_2x3-Olin_Rocketry_Symbols" 0 300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X GND 1 -300 100 100 R 50 50 1 1 U
+X P2 2 300 100 100 L 50 50 1 1 U
+X P3 3 -300 0 100 R 50 50 1 1 U
+X P4 4 300 0 100 L 50 50 1 1 U
+X P5 5 -300 -100 100 R 50 50 1 1 U
+X P6 6 300 -100 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -42,6 +42,23 @@ X PIN15 ~ 1100 -1000 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# BNO055_circuit_i2C-rescue_Header_2x3-Olin_Rocketry_Symbols
+#
+DEF BNO055_circuit_i2C-rescue_Header_2x3-Olin_Rocketry_Symbols H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "BNO055_circuit_i2C-rescue_Header_2x3-Olin_Rocketry_Symbols" 0 300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X GND 1 -300 100 100 R 50 50 1 1 U
+X P2 2 300 100 100 L 50 50 1 1 U
+X P3 3 -300 0 100 R 50 50 1 1 U
+X P4 4 300 0 100 L 50 50 1 1 U
+X P5 5 -300 -100 100 R 50 50 1 1 U
+X P6 6 300 -100 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -74,23 +91,6 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Olin_Rocketry_Symbols_Header_2x3
-#
-DEF Olin_Rocketry_Symbols_Header_2x3 H 0 40 Y Y 1 F N
-F0 "H" 0 200 50 H V C CNN
-F1 "Olin_Rocketry_Symbols_Header_2x3" 0 300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-X GND 1 -300 100 100 R 50 50 1 1 U
-X P2 2 300 100 100 L 50 50 1 1 U
-X P3 3 -300 0 100 R 50 50 1 1 U
-X P4 4 300 0 100 L 50 50 1 1 U
-X P5 5 -300 -100 100 R 50 50 1 1 U
-X P6 6 300 -100 100 L 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
