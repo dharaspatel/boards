@@ -403,7 +403,7 @@ Wire Wire Line
 Text GLabel 10400 5200 2    50   Input ~ 0
 nBOOT_LOAD_PIN
 $Comp
-L Olin_Rocketry_Symbols:Header_2x3 H1
+L BNO055_circuit_i2C-rescue:Header_2x3-Olin_Rocketry_Symbols H1
 U 1 1 5F967336
 P 10050 4600
 F 0 "H1" H 10050 4925 50  0000 C CNN
@@ -414,7 +414,7 @@ F 3 "" H 10050 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Olin_Rocketry_Symbols:Header_2x3 H2
+L BNO055_circuit_i2C-rescue:Header_2x3-Olin_Rocketry_Symbols H2
 U 1 1 5F967DE8
 P 10100 5300
 F 0 "H2" H 10100 5625 50  0000 C CNN
